@@ -2158,8 +2158,9 @@ footer {
     width: 100%;
     padding: 11px 10px 10px 10px;
     cursor: pointer;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(230, 230, 230);
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid;
+    border-color: rgba(255, 255, 255, .3);
     font-size: 18px;
     line-height: 27px;
     font-weight: bold;
@@ -2190,16 +2191,22 @@ footer {
 
 .white_pill:link,
 .white_pill:visited {
-    background-color: rgb(255, 255, 255);
+    border-color: rgba(255, 255, 255, .3);
+    background-color: rgba(255, 255, 255, 1);
+    color: #ff8800;
 }
 
 .white_pill:active,
 .white_pill.active {
-    background-color: rgb(230, 230, 230);
+    border-color: rgba(255, 255, 255, .3);
+    background-color: rgba(255, 255, 255, .3);
+    color: #ffffff;
 }
 
 .white_pill:hover {
-    background-color: rgb(230, 230, 230);
+    border-color: rgba(255, 255, 255, .3);
+    background-color: rgba(255, 255, 255, .3);
+    color: #ffffff;
 }
 
 .footer_content {
@@ -2234,10 +2241,6 @@ footer {
     line-height: 27px;
     font-weight: 500;
     color: #ff8800;
-}
-
-.seo_text ul {
-
 }
 
 .seo_text ul li {
@@ -2309,8 +2312,8 @@ footer {
 
 .soc_list li a {
     display: block;
-    width: 38px;
-    height: 38px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
     background-color: rgba(255, 255, 255);
     -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .1);
@@ -2517,6 +2520,9 @@ footer {
 }
 
 
+
+
+
 .soc_list_fixed {
     display: block;
     margin: 0;
@@ -2533,8 +2539,6 @@ footer {
 }
 
 .soc_list_fixed li a {
-    width: 44px;
-    height: 44px;
     cursor: pointer;
     border: 1px solid rgb(230, 230, 230);
     box-shadow: none;
