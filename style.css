@@ -2121,12 +2121,12 @@ footer {
 
 .callback_form .col:nth-child(1) {
     width: calc(100% - 195px);
-    padding: 10px 10px 10px 0;
+    padding: 10px 11px 10px 0;
 }
 
 .callback_form .col:nth-child(2) {
     width: 195px;
-    padding: 10px 0 10px 10px;
+    padding: 10px 0 10px 11px;
 }
 
 .input_wrapp_orange {
