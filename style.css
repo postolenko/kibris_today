@@ -2539,3 +2539,17 @@ footer {
     border: 1px solid rgb(230, 230, 230);
     box-shadow: none;
 }
+
+.soc_list_fixed li a:link,
+.soc_list_fixed li a:visited {
+    border: 1px solid rgb(230, 230, 230);
+}
+
+.soc_list_fixed li a:active,
+.soc_list_fixed li a.active {
+    border: 1px solid rgb(254, 135, 0);
+}
+
+.soc_list_fixed li a:hover {
+    border: 1px solid rgb(254, 135, 0);
+}
