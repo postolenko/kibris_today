@@ -120,4 +120,33 @@ $(document).ready(function() {
         });
     }
 
+    if($(".rating").length > 0) {
+        $(".rating").each(function() {
+            var ratingVal = parseInt($(this).attr("data-rating"));
+            $(".rating").rateYo({ 
+                rating: ratingVal,
+                spacing: "3px", 
+                numStars: 5, 
+                minValue: 0, 
+                maxValue: 5, 
+                normalFill: '#cccccc',
+                ratedFill: '#ff8800',
+                starWidth: "22px",
+                readOnly: true,
+                "starSvg": "<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px'"+
+                "viewBox='0 0 49.9 49.9' style='enable-background:new 0 0 49.9 49.9;' xml:space='preserve'>"+
+                     "<path d='M48.9,22.7c1-1,1.3-2.4,0.9-3.7c-0.4-1.3-1.5-2.2-2.9-2.4l"+
+                     "-12.1-1.8c-0.5-0.1-1-0.4-1.2-0.9L28.2,3c-0.6-1.2-1.8-2-3.2-2"+
+                     "c-1.4,0-2.6,0.8-3.2,2l-5.4,11c-0.2,0.5-0.7,0.8-1.2,0.9L3.1,16.6c"+
+                     "-1.4,0.2-2.5,1.1-2.9,2.4c-0.4,1.3-0.1,2.7,0.9,3.7l8.7,8.5"
+                    +"c0.4,0.4,0.5,0.9,0.5,1.4l-2.1,12C8,45.8,8.3,46.8,9,47.6c1.1,1.3,2.9,1.7,4.4,0.9l10.8"
+                    +"-5.7c0.5-0.2,1-0.2,1.5,0l10.8,5.7"
+                    +"c0.5,0.3,1.1,0.4,1.7,0.4c1.1,0,2.1-0.5,2.7-1.3c0.7-0.8,1-1.8,"
+                    +"0.8-2.9l-2.1-12c-0.1-0.5,0.1-1,0.5-1.4L48.9,22.7z'/></path>"+
+                    "</svg>"
+            });
+        });
+
+    }
+
 });
