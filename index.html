@@ -43,8 +43,8 @@
 						</div>
 						<div>
 							<ul class="orange_links_list">
-								<li><a href="#">Вход</a></li>
-								<li><a href="#">Регистрация</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#enterModal">Вход</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#regModal">Регистрация</a></li>
 							</ul>
 						</div>
 						<div>
@@ -741,12 +741,56 @@
 
 	</div>
 
+	<!-- Modal -->
+
+	<div class="modal fade" id="enterModal" tabindex="-1" role="dialog" aria-labelledby="enterModal" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	        <div class="modal_white">
+				<button type="button" data-dismiss="modal" aria-label="Close" class="close_btn"></button>
+				<h3>Вход</h3>
+				<div class="modal_form">
+					<div class="input_wrapp">
+						<input type="text" name="" placeholder="Логин">
+					</div>
+					<div class="input_wrapp">
+						<input type="password" name="" placeholder="Пароль">
+					</div>
+					<div class="submit_wrapp">
+						<input type="submit" class="orange_pill" value="Войти" />
+					</div>
+				</div>
+				<div class="modal_footer">
+					<p><a href="#" class="orange_link">Забыли пароль</a></p>
+					<p><a href="#" class="orange_link">Регистрация</a></p>
+				</div>
+			</div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="regModal" tabindex="-1" role="dialog" aria-labelledby="regModal" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	        <div class="modal_white modal_white_2">
+				<button type="button" data-dismiss="modal" aria-label="Close" class="close_btn"></button>
+				<h3>Спасибо за заявку!</h3>
+				<p>Наши менеджеры свяжутся с вами в ближайшее время </p>
+			</div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal -->
+
+
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.fancybox.css">
 	<script src="vendors/js/jquery.js"></script>
 	<script src="slick/slick.js"></script>
 	<script src="vendors/js/jquery.fancybox.js"></script>
+	<script src="vendors/js/bootstrap.min.js"></script>
 	<script src="js/scripts.js"></script>
 
 </body>
