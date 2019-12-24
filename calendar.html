@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 	<title>Kibris today</title>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 
 <body>
@@ -158,11 +159,11 @@
 			</li>
 		</ul>
 
-		<!-- Section 1 - Catalog Page -->
+		<!-- Section 1 - Calendar Page -->
 
 		<section>
 			<div class="row">
-				<div class="two_cols_templ two_cols_templ_2">
+				<div class="two_cols_templ">
 					<div class="left_col">
 						<h3>Каталог заведений</h3>
 						<ul class="side_menu">
@@ -332,346 +333,233 @@
 						<div class="breadcrumbs_wrapp bottom_line">
 							<ul class="breadcrumbs">
 								<li><a href="#">Главная</a></li>
-								<li><a href="#">Где поесть?</a></li>
-								<li><a href="#">Кафе</a></li>
+								<li><a href="#">Календарь</a></li>
 							</ul>
 						</div>
-						<div class="inner_title bottom_line">
-							<h1>Кафе</h1>
+
+						<div class="title_wrapp_2">
+							<h1>Календарь</h1>
 						</div>
-						<div class="filters_sect bottom_line">
-							<h3>Фильтр по:</h3>
-							<form>
-								<div class="filters_wrapp">
-									<div class="input_wrapp_2 filter">
-										<label>Язык обслуживания:</label>
-										<div class="input_wrapp">
-											<div class="custom_select dropdown_select">
-												<div class="active_val">
-													<p>Все</p>
-												</div>
-												<div class="dropdown_box">
-													<ul class="vals_list">
-														<li><p>Все</p></li>
-														<li><p>Русский</p></li>
-														<li><p>Украинский</p></li>
-														<li><p>Английский</p></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="input_wrapp_2 filter">
-										<label>Рейтинг:</label>
-										<div class="radios">
-											<label for="r_1" class="radio"><input type="radio" id="r_1" name="radio_filter"><span>1</span></label>
-											<label for="r_2" class="radio"><input type="radio" id="r_2" name="radio_filter"><span>2</span></label>
-											<label for="r_3" class="radio"><input type="radio" id="r_3" name="radio_filter"><span>3</span></label>
-											<label for="r_4" class="radio"><input type="radio" id="r_4" name="radio_filter"><span>4</span></label>
-											<label for="r_5" class="radio"><input type="radio" id="r_5" name="radio_filter"><span>5</span></label>
-										</div>
-									</div>
-									<div class="input_wrapp_2 filter">
-										<label>Ценовая категория:</label>
-										<div class="input_wrapp">
-											<div class="custom_select dropdown_select">
-												<div class="active_val">
-													<p>Все</p>
-												</div>
-												<div class="dropdown_box">
-													<ul class="vals_list">
-														<li><p>Все</p></li>
-														<li><p>Значение 1</p></li>
-														<li><p>Значение 2</p></li>
-														<li><p>Значение 3</p></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="input_wrapp_2 filter">
-										<label>Открыто сейчас:</label>
-										<div class="input_wrapp">
-											<div class="custom_select dropdown_select">
-												<div class="active_val">
-													<p>Все</p>
-												</div>
-												<div class="dropdown_box">
-													<ul class="vals_list">
-														<li><p>Все</p></li>
-														<li><p>Значение 1</p></li>
-														<li><p>Значение 2</p></li>
-														<li><p>Значение 3</p></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
+
+						<div class="datepicker_wrapp">
+							<div class="datepicker_header">
+								<button type="button" class="left_btn"><i  class="left_white_arrow"></i></button>
+								<p>Ноябрь 2019</p>
+								<button type="button" class="right_btn"><i  class="right_white_arrow"></i></button>
+							</div>
+							<div class="datepicker_table">
+								<div>
+									<span class="vert_border"></span>
+									<span class="vert_border"></span>
+									<span class="vert_border"></span>
+									<span class="vert_border"></span>
+									<span class="vert_border"></span>
+									<span class="vert_border"></span>
 								</div>
-								<div class="buttons_wrapp">
+								<div>
+									<span class="gor_border"></span>
+									<span class="gor_border"></span>
+									<span class="gor_border"></span>
+									<span class="gor_border"></span>
+									<span class="gor_border"></span>
+								</div>
+								<div class="datepicker_title">
 									<div>
-										<input type="submit" value="Применить" class="orange_pill" />
+										<p>Пн</p>
 									</div>
 									<div>
-										<a href="#" class="orange_bold_link">Очистить фильтр</a>
+										<p>Вт</p>
+									</div>
+									<div>
+										<p>Ср</p>
+									</div>
+									<div>
+										<p>Чт</p>
+									</div>
+									<div>
+										<p>Пт</p>
+									</div>
+									<div>
+										<p>Сб</p>
+									</div>
+									<div>
+										<p>Вс</p>
 									</div>
 								</div>
-							</form>
-						</div>
-						<div class="objects_thumbs">
-							<div class="object_thumb">
-								<div class="col_1">
-									<a href="#" class="img_box_wrapp">
-										<div class="img_box">
-											<img src="img/photo_obj_5.jpg" alt="" />
-										</div>
-									</a>
-								</div>
-								<div class="col_2">
-									<a href="#" class="thumb_h">Кафе Ла Мата, Испания</a>
-									<div class="table_2">
-										<div class="table_row">
-											<div class="cell">
-												<p>Категория: <a href="#" class="orange_link">где поесть?</a></p>
-											</div>
-											<div class="cell">
-												<p>Подкатегория: <a href="#" class="orange_link">Кафе</a></p>
-											</div>
-										</div>
-										<div class="table_row">
-											<div class="cell">
-												<div class="rating_wrapp">
-													<div class="rating" id="rateYo" data-rating="3"></div>
-												</div>
-											</div>
-											<div class="cell">
-												<p>Говорят на: <a href="#" class="orange_link">Ru</a></p>
-											</div>
-										</div>
-									</div>
-									<div class="adres_wrapp">
-										<p>Испания, город Ла мата, ул.Коста Бланка, дом 7<span class="slash"></span><a href="#" class="orange_link">Показать на  карте</a></p>
-									</div>
-									<a href="#" class="faworit_link">
-										<i class="like"></i>
-										<span>Добавить в закладки</span>
-									</a>
-								</div>
-							</div>
-							<div class="object_thumb">
-								<div class="col_1">
-									<a href="#" class="img_box_wrapp">
-										<div class="img_box">
-											<img src="img/photo_obj_4.jpg" alt="" />
-										</div>
-									</a>
-								</div>
-								<div class="col_2">
-									<a href="#" class="thumb_h">Кафе Ла Мата, Испания</a>
-									<div class="table_2">
-										<div class="table_row">
-											<div class="cell">
-												<p>Категория: <a href="#" class="orange_link">где поесть?</a></p>
-											</div>
-											<div class="cell">
-												<p>Подкатегория: <a href="#" class="orange_link">Кафе</a></p>
-											</div>
-										</div>
-										<div class="table_row">
-											<div class="cell">
-												<div class="rating_wrapp">
-													<div class="rating" id="rateYo" data-rating="3"></div>
-												</div>
-											</div>
-											<div class="cell">
-												<p>Говорят на: <a href="#" class="orange_link">Ru</a></p>
-											</div>
-										</div>
-									</div>
-									<div class="adres_wrapp">
-										<p>Испания, город Ла мата, ул.Коста Бланка, дом 7<span class="slash"></span><a href="#" class="orange_link">Показать на  карте</a></p>
-									</div>
-									<a href="#" class="faworit_link">
-										<i class="like"></i>
-										<span>Добавить в закладки</span>
-									</a>
-								</div>
-							</div>
-							<div class="object_thumb">
-								<div class="col_1">
-									<a href="#" class="img_box_wrapp">
-										<div class="img_box">
-											<img src="img/photo_obj_3.jpg" alt="" />
-										</div>
-									</a>
-								</div>
-								<div class="col_2">
-									<a href="#" class="thumb_h">Кафе Ла Мата, Испания</a>
-									<div class="table_2">
-										<div class="table_row">
-											<div class="cell">
-												<p>Категория: <a href="#" class="orange_link">где поесть?</a></p>
-											</div>
-											<div class="cell">
-												<p>Подкатегория: <a href="#" class="orange_link">Кафе</a></p>
-											</div>
-										</div>
-										<div class="table_row">
-											<div class="cell">
-												<div class="rating_wrapp">
-													<div class="rating" id="rateYo" data-rating="3"></div>
-												</div>
-											</div>
-											<div class="cell">
-												<p>Говорят на: <a href="#" class="orange_link">Ru</a></p>
-											</div>
-										</div>
-									</div>
-									<div class="adres_wrapp">
-										<p>Испания, город Ла мата, ул.Коста Бланка, дом 7<span class="slash"></span><a href="#" class="orange_link">Показать на  карте</a></p>
-									</div>
-									<a href="#" class="faworit_link">
-										<i class="like"></i>
-										<span>Добавить в закладки</span>
-									</a>
-								</div>
-							</div>
-							<div class="object_thumb grey">
-								<div class="col_1">
-									<a href="#" class="img_box_wrapp">
-										<div class="img_box">
-											<img src="img/photo_obj_2.jpg" alt="" />
-										</div>
-									</a>
-								</div>
-								<div class="col_2">
-									<a href="#" class="thumb_h">Кафе Ла Мата, Испания</a>
-									<div class="table_2">
-										<div class="table_row">
-											<div class="cell">
-												<p>Категория: <a href="#" class="orange_link">где поесть?</a></p>
-											</div>
-											<div class="cell">
-												<p>Подкатегория: <a href="#" class="orange_link">Кафе</a></p>
-											</div>
-										</div>
-										<div class="table_row">
-											<div class="cell">
-												<div class="rating_wrapp">
-													<div class="rating" id="rateYo" data-rating="3"></div>
-												</div>
-											</div>
-											<div class="cell">
-												<p>Говорят на: <a href="#" class="orange_link">Ru</a></p>
-											</div>
-										</div>
-									</div>
-									<div class="adres_wrapp">
-										<p>Испания, город Ла мата, ул.Коста Бланка, дом 7<span class="slash"></span><a href="#" class="orange_link">Показать на  карте</a></p>
-									</div>
-									<a href="#" class="faworit_link">
-										<i class="like"></i>
-										<span>Добавить в закладки</span>
-									</a>
-								</div>
-							</div>
-							<div class="object_thumb grey">
-								<div class="col_1">
-									<a href="#" class="img_box_wrapp">
-										<div class="img_box">
-											<img src="img/photo_obj.jpg" alt="" />
-										</div>
-									</a>
-								</div>
-								<div class="col_2">
-									<a href="#" class="thumb_h">Кафе Ла Мата, Испания</a>
-									<div class="table_2">
-										<div class="table_row">
-											<div class="cell">
-												<p>Категория: <a href="#" class="orange_link">где поесть?</a></p>
-											</div>
-											<div class="cell">
-												<p>Подкатегория: <a href="#" class="orange_link">Кафе</a></p>
-											</div>
-										</div>
-										<div class="table_row">
-											<div class="cell">
-												<div class="rating_wrapp">
-													<div class="rating" id="rateYo" data-rating="3"></div>
-												</div>
-											</div>
-											<div class="cell">
-												<p>Говорят на: <a href="#" class="orange_link">Ru</a></p>
-											</div>
-										</div>
-									</div>
-									<div class="adres_wrapp">
-										<p>Испания, город Ла мата, ул.Коста Бланка, дом 7<span class="slash"></span><a href="#" class="orange_link">Показать на  карте</a></p>
-									</div>
-									<a href="#" class="faworit_link">
-										<i class="like"></i>
-										<span>Добавить в закладки</span>
-									</a>
-								</div>
-							</div>
-							<div class="object_thumb grey">
-								<div class="col_1">
-									<a href="#" class="img_box_wrapp">
-										<div class="img_box">
-											<img src="img/photo_obj.jpg" alt="" />
-										</div>
-									</a>
-								</div>
-								<div class="col_2">
-									<a href="#" class="thumb_h">Кафе Ла Мата, Испания</a>
-									<div class="table_2">
-										<div class="table_row">
-											<div class="cell">
-												<p>Категория: <a href="#" class="orange_link">где поесть?</a></p>
-											</div>
-											<div class="cell">
-												<p>Подкатегория: <a href="#" class="orange_link">Кафе</a></p>
-											</div>
-										</div>
-										<div class="table_row">
-											<div class="cell">
-												<div class="rating_wrapp">
-													<div class="rating" id="rateYo" data-rating="3"></div>
-												</div>
-											</div>
-											<div class="cell">
-												<p>Говорят на: <a href="#" class="orange_link">Ru</a></p>
-											</div>
-										</div>
-									</div>
-									<div class="adres_wrapp">
-										<p>Испания, город Ла мата, ул.Коста Бланка, дом 7<span class="slash"></span><a href="#" class="orange_link">Показать на  карте</a></p>
-									</div>
-									<a href="#" class="faworit_link">
-										<i class="like"></i>
-										<span>Добавить в закладки</span>
-									</a>
+								<div class="datepiker_days">
+									<div class="past_day"><p>28</p></div>
+									<div class="past_day"><p>29</p></div>
+									<div class="past_day"><p>30</p></div>
+									<div class="past_day"><p>31</p></div>
+									<div><p>1</p></div>
+									<div class="grey_day"><p>2</p></div>
+									<div class="grey_day"><p>3</p></div>
+									<div><p>4</p></div>
+									<div class="blue_day"><p>5</p></div>
+									<div><p>6</p></div>
+									<div><p>7</p></div>
+									<div><p>8</p></div>
+									<div class="grey_day"><p>9</p></div>
+									<div class="grey_day"><p>10</p></div>
+									<div><p>11</p></div>
+									<div><p>12</p></div>
+									<div><p>13</p></div>
+									<div  class="blue_day"><p>14</p></div>
+									<div><p>15</p></div>
+									<div class="grey_day"><p>16</p></div>
+									<div class="grey_day"><p>17</p></div>
+									<div><p>18</p></div>
+									<div><p>19</p></div>
+									<div><p>20</p></div>
+									<div><p>21</p></div>
+									<div><p>22</p></div>
+									<div class="grey_day"><p>23</p></div>
+									<div class="grey_day"><p>24</p></div>
+									<div class="blue_day"><p>25</p></div>
+									<div><p>26</p></div>
+									<div class="pink_day"><p>27</p></div>
+									<div><p>28</p></div>
+									<div class="blue_day"><p>29</p></div>
+									<div class="grey_day"><p>30</p></div>
+									<div class="grey_day"><p>1</p></div>
 								</div>
 							</div>
 						</div>
-						<ul class="pagination_wrapp">
-							<ul class="pagination">
-								<li><a href="#" class="prev_btm"><</a></li>
-								<li><a href="#">1</a></li>
-								<li><a href="#" class="active">2</a></li>
-								<li><a href="#">3</a></li>
-								<li><a href="#">4</a></li>
-								<li class="dots">...</li>
-								<li><a href="#">5</a></li>
-								<li><a href="#" class="next_btm">></a></li>
-							</ul>
-						</ul>
+						<div class="news_thumbnails_wrapp">
+							<h3>События на 26 ноября 2019</h3>
+							<div class="news_thumbnails">
+								<div class="news_thumb">
+									<div class="img_box_wrapp">
+										<a href="#" class="favorite">
+											<i class="like"></i>
+											<i class="favorite_fill"></i>
+										</a>
+										<div class="img_box">
+											<img src="img/photo_1.jpg" alt="" />
+										</div>
+									</div>
+									<div class="descript descript_1">
+										<a href="#" class="thumb_title">Цены в стране: сколько стоит жить на Мальте</a>
+										<p>Здесь дешевле, чем в Центральной и Северной Европе, но дороже, чем в Москве</p>
+									</div>
+									<div class="descript_2">
+										<div>
+											<a href="#" class="booble_wrapp">
+												<i class="booble"></i>
+												<p>5</p>
+											</a>
+										</div>
+										<div>
+											<p><a href="#" class="orange_link">Оставить отзыв</a></p>
+										</div>
+									</div>
+									<div class="thumb_footer_2">
+										<div>
+											<p class="date"><i class="datepiker"></i>26.11.2019</p>
+										</div>
+										<div>
+											<div class="mark_set green">
+												<i class="green_like"></i>
+												<p>12</p>
+											</div>
+											<div class="mark_set red">
+												<i class="dislike"></i>
+												<p>2</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="news_thumb">
+									<div class="img_box_wrapp">
+										<a href="#" class="favorite active">
+											<i class="like"></i>
+											<i class="favorite_fill"></i>
+										</a>
+										<div class="img_box">
+											<img src="img/photo_2.jpg" alt="" />
+										</div>
+									</div>
+									<div class="descript descript_1">
+										<a href="#" class="thumb_title">Зачем покупать недвижимость на Кипре</a>
+										<p>Документы для оформления вида на жительство можно собрать за один день</p>
+									</div>
+									<div class="descript_2">
+										<div>
+											<a href="#" class="booble_wrapp">
+												<i class="booble"></i>
+												<p>5</p>
+											</a>
+										</div>
+										<div>
+											<p><a href="#" class="orange_link">Оставить отзыв</a></p>
+										</div>
+									</div>
+									<div class="thumb_footer_2">
+										<div>
+											<p class="date"><i class="datepiker"></i>26.11.2019</p>
+										</div>
+										<div>
+											<div class="mark_set green">
+												<i class="green_like"></i>
+												<p>12</p>
+											</div>
+											<div class="mark_set red">
+												<i class="dislike"></i>
+												<p>2</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="news_thumb">
+									<div class="img_box_wrapp">
+										<a href="#" class="favorite">
+											<i class="like"></i>
+											<i class="favorite_fill"></i>
+										</a>
+										<div class="img_box">
+											<img src="img/photo_3.jpg" alt="" />
+										</div>
+									</div>
+									<div class="descript descript_1">
+										<a href="#" class="thumb_title">Цены в стране: сколько стоит жить в Египте</a>
+										<p>На курортах дороже по определению, но даже там – копейки</p>
+									</div>
+									<div class="descript_2">
+										<div>
+											<a href="#" class="booble_wrapp">
+												<i class="booble"></i>
+												<p>5</p>
+											</a>
+										</div>
+										<div>
+											<p><a href="#" class="orange_link">Оставить отзыв</a></p>
+										</div>
+									</div>
+									<div class="thumb_footer_2">
+										<div>
+											<p class="date"><i class="datepiker"></i>26.11.2019</p>
+										</div>
+										<div>
+											<div class="mark_set green">
+												<i class="green_like"></i>
+												<p>12</p>
+											</div>
+											<div class="mark_set red">
+												<i class="dislike"></i>
+												<p>2</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- /Section 1 - Catalog Page -->
+		<!-- /Section 1 - Calendar Page -->
 
 	</div>
 	<!-- /Content -->
