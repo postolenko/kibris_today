@@ -2903,10 +2903,6 @@ textarea:focus {
     display: -webkit-inline-flex;
 }
 
-.booble_wrapp i {
-
-}
-
 .booble_wrapp p {
     padding: 2px 0 0 10px;
     color: #ff8800;
@@ -2985,6 +2981,80 @@ textarea:focus {
 
 /*-- /Section 1 - Calendar Page --*/
 
+/*-- Section 1 - Lifehaks Page --*/
+
+.links_list {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 8px -25px;
+}
+
+.links_list li {
+    padding: 0 25px;
+}
+
+.links_list li a {
+    display: inline;
+    border-bottom: 1px dotted #ff8800;
+    color: #ff8800;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.links_list li a:link,
+.links_list li a:visited {
+    border-bottom: 1px dotted #ff8800;
+    color: #ff8800;
+}
+
+.links_list li a:active,
+.links_list li a.active {
+    border-bottom: 1px dotted #4c4c4c;
+    color: #4c4c4c;
+}
+
+.links_list li a:hover {
+    border-bottom: 1px dotted #4c4c4c;
+    color: #4c4c4c;
+}
+
+.news_thumbnails_2 {
+    margin: 18px -10px 11px -10px;
+    padding-bottom: 9px;
+    position: relative;
+}
+
+.news_thumbnails_2:after {
+    content: "";
+    width: calc(100% - 20px);
+    height: 1px;
+    background-color: #e6e6e6;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+
+
+/*-- /Section 1 - Lifehaks Page --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
