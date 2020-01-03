@@ -1,30 +1,1362 @@
+@media only screen and (max-width: 1500px) {
+
+	.soc_list_fixed {
+	    right: 5px;
+	}
+
+}
+
 @media only screen and (max-width: 1240px) {
 
+	/*-- Header --*/
 
+	.logo_text div {
+	    font-size: 37px;
+	    line-height: 40px;
+	}
+
+	.header_top_row .left_col {
+	    width: 280px;
+	}
+
+	.header_top_row .right_col {
+	    width: calc(100% - 280px);
+	}
+
+	.search_box {
+	    width: 200px;
+	}
+
+	.inline_blocks > div {
+	    padding: 0 12px;
+	}
+
+	.orange_links_list a {
+	    font-size: 16px;
+	    line-height: 19px;
+	}
+
+	/*-- /Header --*/
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+	/*-- Header --*/
+
+	.header_top_row .left_col {
+	    padding: 5px 5px 5px 0;
+	}
+
+	.header_top_row .right_col {
+	    padding: 5px 0 5px 5px;
+	}
+
+	.resp_menu_wrapp {
+		display: block;
+	}
+
+	.respmenubtn {
+	    display: block;
+	}
+
+	.main_nav li a {
+	    min-height: 40px;
+	    padding: 3px 15px;
+	}
+
+	.resp_search {
+		width: 100%;
+		max-width: 320px;
+		margin: 20px auto 10px auto;
+	}
+
+	.search_box {
+	    width: 100%;
+	}
+
+	/*-- /Header --*/
+
+	/*-- Section 1 - Main Page --*/
+
+	.two_cols_templ {
+		display: block;
+	}
+
+	.two_cols_templ .left_col {
+	    width: 100%;
+	   	margin-top: 30px;
+	   	padding: 30px 0 20px 0;
+	    border-right: none;
+	    position: relative;
+	}
+
+	.two_cols_templ .right_col {
+	    width: 100%;
+	    padding-left: 0;
+	}
+
+	.two_cols_templ .left_col:before {
+		content: "";
+		width: calc(100% + 50px);
+		height: 1px;
+		background-color: #e5e5e5;
+		position: absolute;
+		top: 0;
+		left: -25px;
+	}
+
+	.banner_wrapp {
+		display: none;
+	}
+
+	.catalog_resp_wrapp {
+	    display: block;
+	}
+
+	.sidebar_ttile {
+		display: none;
+	}
+
+	/*-- /Section 1 - Main Page --*/
+
+	/*-- Section 1 - Private --*/
+
+	.private_thumbs {
+	    margin: 0;
+	}
+
+	.private_thumb {
+	    width: 100%;
+	    margin: 10px 0;
+	}
+
+	/*-- /Section 1 - Private --*/
+
+	/*-- Section 1 - Main Page --*/
+
+	.two_cols_2 {
+		display: block;
+	}
+
+	.two_cols_2 .left_col {
+	    width: 100%;
+	    position: relative;
+	    padding: 30px 0 35px;
+	}
+
+	.two_cols_2 .right_col {
+	    width: 100%;
+	    padding-left: 0;
+	    padding-top: 27px;
+	    position: relative;
+	}
+
+	.two_cols_2 .left_col:before {
+		content: "";
+		width: calc(100% + 50px);
+		height: 1px;
+		background-color: #e5e5e5;
+		position: absolute;
+		top: 0;
+		left: -25px;
+	}
+
+	.two_cols_2 .right_col:before {
+		content: "";
+		width: calc(100% + 50px);
+		height: 1px;
+		background-color: #e5e5e5;
+		position: absolute;
+		top: 0;
+		left: -25px;
+	}
+
+	/*-- /Section 1 - Main Page --*/
+
+	/*-- Section 1 - Private 2 --*/
+
+	.tables_thumbs {
+	    margin: 0 0 10px 0;
+	}
+
+	.table_thumb {
+	    width: 100%;
+	    margin: 10px 0;
+	}
+
+	/*-- /Section 1 - Private 2 --*/
+
+	/*-- Footer --*/
+
+	.callback_form_wrapp {
+	    align-items: center;
+	    -webkit-align-items: center;
+	}
+
+	.callback_form_wrapp .left_col {
+	    padding: 5px 15px 5px 0;
+	}
+
+	.callback_form_wrapp .right_col {
+	    padding: 5px 0;
+	}
+
+	.callback_form_wrapp h3 {
+	    padding: 7px 0;
+	    font-size: 20px;
+	    line-height: 27px;
+	}
+
+	/*-- /Footer --*/
 
 }
 
 
 @media only screen and (max-width: 900px) {
 
+	h2 {
+	    font-size: 30px;
+	    line-height: 39px;
+	}
 
+	.wrapper {
+	    padding-top: 70px;
+	}
+
+	.soc_list_fixed {
+    	display: none;
+    }
+
+	/*-- Header --*/
+
+	.header_site {
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 10;
+	}
+
+	.header_top_row:after {
+		display: none;
+	}
+
+	.main_nav_resp {
+		padding: 20px 0;
+	}
+
+	.main_nav {
+		display: block;
+	}
+
+	.main_nav li {
+		display: block;
+	    padding: 0;
+	    text-align: center;
+	}
+
+	.main_nav li a:before {
+		display: none;
+	}
+
+	.resp_menu_wrapp {
+	    padding: 0 25px;
+	    position: fixed;
+	}
+
+	.resp_menu_wrapp .inline_blocks {
+		display: block;
+		border-top: 1px solid #e6e6e6;
+	}
+
+	.resp_menu_wrapp .inline_blocks > div {
+		padding: 5px 0;
+	}
+
+	/*-- /Header --*/
+
+	/*-- Section 1 - Recomendations Page --*/
+
+	.two_cols_templ_3 {
+	    display: block;
+	}
+
+	.templ_left_col {
+	    width: 100%;
+	    padding-right: 0;
+	}
+
+	.templ_right_col {
+	    width: 100%;
+   		padding: 30px 0 20px 0;
+	}
+
+	.miniature_articles {
+		display: flex;
+		display: -webkit-flex;
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		margin: 0 -10px;
+	}
+
+	.miniature_article {
+		width: calc(33.33% - 20px);
+		margin: 0 10px;
+	    border-bottom: none;
+	}
+
+	/*--/Section 1 - Recomendations Page --*/
+
+	/*-- Footer --*/
+
+	.footer_section {
+	    padding: 1px 0 0 0;
+	}
+
+	.seo_text {
+	    padding: 10px 4% 10px 0;
+	}
+
+	/*-- /Footer --*/
+
+}
+
+@media only screen and (max-width: 850px) {
+
+	/*-- Section 1 - Main Page --*/
+
+	.two_cols_templ_2 > .col:nth-child(odd) {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.two_cols_templ_2 > .col:nth-child(even) {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	/*-- /Section 1 - Main Page --*/
+
+	/*-- Section 1 - Forum V1 Page --*/
+
+	.forum_table .table_row {
+		display: flex;
+		display: -webkit-flex;
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.forum_table .table_header {
+		display: none;
+	}
+
+	.forum_table .table_row .cell {
+		display: block;
+	    text-align: left;
+	    padding-top: 7px;
+	    padding-bottom: 7px;
+	}
+
+	.forum_table .table_row .cell:nth-child(1) {
+	    width: 100%;
+	    padding-left: 0;
+	    text-align: left;
+	}
+
+	.forum_table .table_row .cell:nth-child(1) > div:nth-child(1) {
+	    padding-right: 0;
+	}
+
+	.forum_table .table_row .cell:nth-child(2) {
+	    width: 15%;
+	}
+
+	.forum_table .table_row .cell:nth-child(3) {
+	    width: 23%;
+	}
+
+	.forum_table .table_row .cell:nth-child(4) {
+	    width: 42%;
+	}
+
+	.forum_table .table_row .cell:nth-child(5) {
+	    width: 20%;
+	}
+
+	.resp_h {
+		display: block;
+		padding-bottom: 5px;
+	}
+
+	/*-- /Section 1 - Forum V1 Page --*/
 
 }
 
 @media only screen and (max-width: 767px) {
 
+	/*-- Header --*/
 
+	.catalog_resp_wrapp {
+		position: relative;
+		z-index: 5;
+		margin: 0 -25px 20px -25px;
+	}
+
+	.catalog_resp_wrapp .catalog_resp {
+		display: none;
+		background-color: #f4f4f4;
+		width: 100%;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		padding: 0 25px;
+	}
+
+	.catalog_resp_btn p .right_arrow {
+		display: inline-block;
+	}
+
+	.catalog_resp_btn {
+	    cursor: pointer;
+	}
+
+	.catalog_resp_btn.active p {
+	    color: #afafaf;
+	}
+
+	/*-- /Header --*/
+
+	/*-- Section 1 - Main Page --*/
+
+	.sect_1 {
+		padding-top: 0;
+	}
+
+	.promo_slider_wrapp {
+		margin: 0 -25px;
+	}
+
+	.two_cols_templ {
+	    margin: 0;
+	}
+
+	.promo_slide {
+		padding: 20px 15px 42px 15px;
+	}
+
+	.promo_slide .slide_descript {
+		height: 430px;
+	}
+
+	.promo_slide .slide_descript h2 {
+	    padding: 0 0 15px 0;
+	    font-size: 30px;
+	    line-height: 35px;
+	}
+
+	.promo_slide .slide_descript p {
+	    padding: 5px 3%;
+	    font-size: 17px;
+	    line-height: 24px;
+	}
+
+	.promo_slider_controls_wrapp {
+	    bottom: 10px;
+	}
+
+	.transparent_pill {
+	    margin: 5px 0;
+	}
+
+	/*-- /Section 1 - Main Page --*/
+
+	/*-- Section 1 - Calendar Page --*/
+
+	.news_thumb {
+	    width: calc(50% - 20px);
+	}
+
+	/*-- /Section 1 - Calendar Page --*/
+
+	/*-- Section 1 - Lifehaks Page --*/
+
+	.desc_links {
+		display: none;
+	}
+
+	.resp_select {
+	    display: block;
+	}
+
+	/*-- /Section 1 - Lifehaks Page --*/
+
+	/*-- Section 1 - Open Card --*/
+
+	.open_card_templ {
+	    display: block;
+	}
+
+	.open_card_templ .left_col {
+	    width: 100%;
+	    padding-right: 0;
+	}
+
+	.open_card_templ .right_col {
+	    width: 100%;
+	    padding-left: 0;
+	}
+
+	.card_img_box {
+		height: 285px;
+		margin-bottom: 15px;
+	}
+
+	.card_img_box img {
+	    min-width: 100%;
+	    min-height: 100%;
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    -webkit-transform: translate(-50%, -50%);
+	    -moz-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+	}
+
+	/*-- /Section 1 - Open Card --*/
+
+	/*-- Section 1 - Recomendations Page --*/
+
+	.miniature_article {
+		width: calc(50% - 20px);
+	}
+
+	/*--/Section 1 - Recomendations Page --*/
+
+	/*-- Footer --*/
+
+	.callback_form_sect {
+		height: 100%;
+	}
+
+	.callback_form_wrapp .left_col,
+	.callback_form_wrapp .right_col {
+		width: 100%;
+		text-align: center;
+	    padding: 0;
+	}
+
+	.callback_form_wrapp {
+		display: block;
+		margin: 0 -25px;
+	    padding: 18px 25px;
+	    background-color: rgb(255, 136, 0);
+	    box-shadow: none;
+	    -webkit-border-radius: 0;
+	    -moz-border-radius: 0;
+	    border-radius: 0;
+	    text-align: center;
+	}
+
+	/*-- /Footer --*/
 
 }
 
+@media only screen and (max-width: 700px) {
+
+	/*-- Section 1 - Catalog Page --*/
+
+	.object_thumb .col_1 {
+		width: 200px;
+	}
+
+	.object_thumb .col_2 {
+		width: calc(100% - 200px);
+	}
+
+	/*-- /Section 1 - Catalog Page --*/
+
+	/*-- Section 1 - Forum V1 Page --*/
+
+	.forum_table .table_row .cell {
+		display: flex;
+		display: -webkit-flex;
+	}
+
+	.forum_table .table_row .cell > div:nth-child(1) {
+		padding-right: 10px;
+	}
+
+	.forum_table .table_row .cell > div:nth-child(2) {
+		padding-left: 10px;
+	}
+
+	.forum_table .table_row .cell:nth-child(2) {
+	    width: 40%;
+	}
+
+	.forum_table .table_row .cell:nth-child(3) {
+	    width: 60%;
+	}
+
+	.forum_table .table_row .cell:nth-child(4) {
+	    width: 60%;
+	}
+
+	.forum_table .table_row .cell:nth-child(5) {
+	    width: 40%;
+	}
+
+	/*-- /Section 1 - Forum V1 Page --*/
+
+	/*-- Section 3 - Private --*/
+
+	.two_cols_2 {
+	    margin: 30px 0;
+	}
+
+	/*-- /Section 3 - Private --*/
+
+	/*-- Section 1 - Advent Page --*/
+
+	.resp_selects {
+	    display: block;
+	}
+
+	/*-- /Section 1 - Advent Page --*/
+
+	/*-- Section 1 - Open Forum Page --*/
+
+	.item_title_col_1 {
+	    width: 50%;
+	}
+
+	.item_title_col_2 {
+		display: none;
+	}
+
+	.item_title_col_5 {
+	    width: 50%;
+	}
+
+	/*-- /Section 1 - Open Forum Page --*/
+
+	/*-- Section 1 - Vacansies Page --*/
+
+	.checkboxes_sect {
+	    margin: 10px 0 8px 0;
+	}
+
+	.checkboxes_thumb {
+	    width: 100%;
+	    max-width: 100%;
+	    padding: 0;
+	}
+
+	/*-- /Section 1 - Vacansies Page --*/
+
+}
+
+
 @media only screen and (max-width: 600px) {
 
+	h1 {
+	    font-size: 30px;
+	    line-height: 38px;
+	}
 
+	.row {
+	    padding: 0 10px;
+	}
+
+	.wrapper {
+	    padding-top: 61px;
+	}
+
+	/*-- Section 1 - Main Page --*/
+
+	.two_cols_templ .left_col:before {
+		content: "";
+		width: calc(100% + 20px);
+		height: 1px;
+		background-color: #e5e5e5;
+		position: absolute;
+		top: 0;
+		left: -10px;
+	}
+
+	.promo_slider_wrapp {
+	    margin: 0 -10px;
+	}
+
+	.resp_menu_wrapp.active {
+	    top: 61px;
+	}
+
+	.resptitle .col:nth-child(1) {
+	    width: 100% !important;
+	    padding-right: 0 !important;
+	}
+
+	.resptitle .col:nth-child(2) {
+		display: none !important;
+	}
+
+	.orange_link_wrapp {
+		display: block;
+		text-align: center;
+		padding: 15px 0 0 0;
+	}
+
+	.article_thumb .col:nth-child(1) {
+	    width: 85px;
+	}
+
+	.article_thumb .col:nth-child(2) {
+	    width: calc(100% - 75px);
+	    padding-top: 0;
+	}
+
+	.article_thumb .img_box {
+	    height: 75px;
+	}
+
+	.catalog_resp_wrapp {
+	    margin: 0 -10px 20px -10px;
+	}
+
+	.catalog_resp .side_menu li:last-child {
+		border-bottom: none;
+	}
+
+	.catalog_resp .side_menu {
+	    margin-bottom: 18px;
+	}
+
+	/*-- /Section 1 - Main Page --*/
+
+	/*-- Section 1 - Catalog Page --*/
+
+	.sect_1_resp {
+		padding-top: 1px;
+		margin-top: -1px;
+	}
+
+	.object_thumb {
+	    padding: 10px;
+	}
+
+	.pagination li {
+	    padding: 7px 1px;
+	}
+
+	.pagination li a {
+	    min-width: 28px;
+	}
+
+	/*-- /Section 1 - Catalog Page --*/
+
+	/*-- Section 3 - Private --*/
+
+	.news_thumbnails {
+	    margin: 0;
+	}
+
+	.two_cols_2 .left_col:before {
+	    width: calc(100% + 20px);
+	    left: -10px;
+	}
+
+	.two_cols_2 .right_col:before {
+	    width: calc(100% + 20px);
+	    left: -10px;
+	}
+
+	/*-- /Section 3 - Private --*/
+
+	/*-- Section 1 - News Page --*/
+
+	.filters_2 {
+		width: 100%;
+	    margin: 0;
+	}
+
+	.filters_2 > div {
+		display: block;
+		width: 100%;
+		padding: 6px 0;
+	}
+
+	.filters_2 .dropdown_select {
+		display: inline-block;
+		width: 240px;
+	}
+
+	.filters_2 .dropdown_select.active .dropdown_box {
+	    left: 0;
+	}
+
+	/*-- /Section 1 - News Page --*/
+
+	/*-- Section 1 - Advent Page --*/
+
+	.advent_card {
+	    padding: 10px 10px 5px 10px;
+	}
+
+	.advent_card_col_1 {
+	    width: 145px;
+	}
+
+	.advent_card_col_2 {
+	    width: calc( 100% - 145px);
+	}
+
+	.advent_card_col_1 .img_box_wrapp {
+	    height: 145px;
+	    margin-bottom: 10px;
+	}
+
+	.advent_card_col_1 .img_box {
+		height: 145px;
+	}
+
+	.card_title {
+	    font-size: 18px;
+	    line-height: 23px;
+	}
+
+	/*-- /Section 1 - Advent Page --*/
+
+	/*-- Section 1 - Open Forum Page --*/
+
+	.title_wrapp_3_resp {
+		display: block;
+		padding-bottom: 10px;
+	}
+
+	.title_wrapp.title_wrapp_3_resp .col:nth-child(1) {
+	    width: 100% !important;
+	    padding: 5px 0 !important;
+	}
+
+	.title_wrapp.title_wrapp_3_resp  .col:nth-child(2) {
+		width: 100% !important;
+		padding: 5px 0 !important;
+		text-align: left !important;
+	}
+
+	.forum_item_title {
+	    padding: 0 10px;
+	}
+
+	.forum_item_desc {
+	    padding: 9px 10px 14px 10px;
+	}
+
+	.resp_p {
+	    display: block;
+	}
+
+	.add_date span {
+		display: block;
+	}
+
+	.desc_col_1 {
+	    width: 90px;
+	}
+
+	.desc_col_2 {
+	    width: calc( 100% - 90px);
+	}
+
+	.forum_item_img {
+	    height: 70px;
+	}
+
+	.forum_item_desc .advert_col_resp {
+		padding-top: 10px;
+	}
+
+	/*-- /Section 1 - Open Forum Page --*/
+
+	/*-- Section 1 - Vacansies Page --*/
+
+	.vacansie_card_col_1 {
+	    width: 90px;
+	}
+
+	.vacansie_card_col_2 {
+	    width: calc(100% - 90px);
+	    margin-top: 0;
+	}
+
+	.vacansie_card_img_box {
+	    height: 60px;
+	}
+
+	.vacansie_card .col_resp {
+		padding-top: 10px;
+	}
+
+	/*-- /Section 1 - Vacansies Page --*/
+
+	/*-- Footer --*/
+
+	.callback_form_wrapp {
+		margin: 0 -10px;
+	    padding: 18px 10px;
+	}
+
+	.footer_content .col:nth-child(1) {
+	    display: none;
+	}
+
+	.footer_content .col:nth-child(2) {
+	    width: 100%;
+	    display: flex;
+	    display: -webkit-flex;
+	    justify-content: space-between;
+	    -webkit-justify-content: space-between;
+	}
+
+	.footer_content .col:nth-child(2) > div:nth-child(odd) {
+		order: 2;
+	}
+
+	.footer_content .col:nth-child(2) > div:nth-child(even) {
+		order: 1;
+	}	
+
+	/*-- /Footer --*/
+
+}
+
+@media only screen and (max-width: 550px) {
+
+	/*-- Section 1 - Catalog Page --*/
+
+	.object_thumb {
+	    display: block;
+	}
+
+	.object_thumb .col_1 {
+	    width: 100%;
+	    padding-right: 0;
+	}
+
+	.object_thumb .col_2 {
+	    width: 100%;
+	    padding: 15px 0 0 0;
+	}
+
+	/*-- /Section 1 - Catalog Page --*/
+
+	/*-- Section 1 - Calendar Page --*/
+
+	.datepicker_table .gor_border:nth-child(2) {
+	    top: 95px;
+	}
+
+	.datepicker_table .gor_border:nth-child(3) {
+		top: 136px;
+	}
+
+	.datepicker_table .gor_border:nth-child(4) {
+	    top: 178px;
+	}
+
+	.datepicker_table .gor_border:nth-child(5) {
+    	top: 221px;
+	}
+
+	.datepiker_days > div {
+	    height: 42px;
+	}
+
+	.datepiker_days > div > p {
+		font-size: 18px;
+	    line-height: 41px;
+	}
+
+	.news_thumbnails {
+	    margin: 0;
+	}
+
+	.news_thumb {
+	    width: 100%;
+	    margin: 15px 0;
+	}
+
+	/*-- /Section 1 - Calendar Page --*/
 
 }
 
 
 @media only screen and (max-width: 480px) {
 
+	/*-- Header --*/
+
+	.header_top_row .left_col {
+	    width: 250px;
+	}
+
+	.header_top_row .right_col {
+	    width: calc(100% - 250px);
+	}
+
+	.logo_text div {
+	    font-size: 30px;
+	    line-height: 30px;
+	}
+
+	/*-- /Header --*/
+
+	/*-- Section 1 - Main Page --*/
+
+	.weather_header .title_wrapp {
+		display: block !important;
+	}
+
+	.weather_header .title_wrapp .col {
+		width: 100% !important;
+		padding: 5px 0 !important;
+		text-align: left !important;
+	}
+
+	.article_thumb {
+		display: block;
+		padding: 10px 10px 20px 10px;
+	}
+
+	.article_thumb .col:nth-child(1) {
+	    width: 100%;
+	    padding-bottom: 15px;
+	    padding-right: 0;
+	}
+
+	.article_thumb .col:nth-child(2) {
+	    width: 100%;
+	    padding: 0;
+	}
+
+	.article_thumb .img_box {
+	    height: 150px;
+	    width: 100%;
+	}
+
+	/*-- /Section 1 - Main Page --*/
+
+	/*-- Section 1 - Catalog Page --*/
+
+	.inner_title {
+	    padding: 11px 0;
+	}
+
+	.filters_wrapp {
+	    margin: 0;
+	}
+
+	.filters_wrapp .filter {
+	    width: 100%;
+	    margin: 7px 0;
+	}
+
+	/*-- /Section 1 - Catalog Page --*/
+
+	/*-- Section 1 - Forum V1 Page --*/
+
+	.forum_table .table_row {
+		padding-top: 9px;
+		padding-bottom: 9px;
+	}
+
+	.forum_table .table_row:nth-child(2) {
+	    border-top: 1px solid #e6e6e6;
+	}
+
+	.forum_table .table_row .cell {
+		padding: 4px 0;
+	}
+
+	.forum_table .table_row .cell:nth-child(2) {
+	    width: 100%;
+	}
+
+	.forum_table .table_row .cell:nth-child(3) {
+	    width: 100%;
+	}
+
+	.forum_table .table_row .cell:nth-child(4) {
+	    width: 100%;
+	}
+
+	.forum_table .table_row .cell:nth-child(5) {
+	    width: 100%;
+	}
+
+	/*-- /Section 1 - Forum V1 Page --*/
+
+	/*-- Section 1 - Private --*/
+
+	.inputs_2 {
+	    margin: 0;
+	}
+
+	.inputs_2 .input_wrapp {
+	    width: 100%;
+	    margin: 7px 0;
+	}
+
+	.private_thumbs {
+		overflow: hidden;
+	}
+
+	.private_thumb {
+	    padding: 27px 0 10px 0;
+	    box-shadow: none;
+	    border-bottom: 1px solid #e5e5e5;
+	}
+
+	.private_thumb:nth-child(1) {
+		padding-top: 1px;
+	}
+
+	.private_form_wrapp .inputs_3 {
+	    margin: 0 -3px;
+	}
+
+	.inputs_3 input {
+	    margin: 0 3px;
+	}
+
+	input.month {
+	    width: 100px;
+	}
+
+	.submit_wrapp_2 .orange_pill {
+	    margin: 10px 0;
+	    width: 100%;
+	}
+
+	.inputs_2 .input_wrapp .orange_pill {
+	    width: 100%;
+	}
+
+	.inline_submit_wrapp {
+		display: block;
+		width: 100%;
+	}
+
+	.inline_submit_wrapp .orange_pill {
+	    width: 100%;
+	    min-width: 100%;
+	}
+
+	/*-- /Section 1 - Private --*/
+
+	/*-- Section 3 - Private --*/
+
+	.testimonial_title_resp {
+	    display: block;
+	    padding-left: 20px;
+	}
+
+	.testimonial_title {
+		display: none;
+	}
+
+	.testimonial_wrapp {
+	    display: block;
+	}
+
+	.testimonial_col_1 {
+		display: flex;
+		display: -webkit-flex;
+		align-items: center;
+		-webkit-align-items: center;
+	    width: 100%;
+	    padding-right: 0;
+	    padding-bottom: 12px;
+	}
+
+	.testimonial_col_2 {
+	    width: 100%;
+	    padding-left: 0;
+	}
+
+	/*-- /Section 3 - Private --*/
+
+	/*-- Section 1 - Private 2 --*/
+
+	.table_3 .table_row {
+		display: block;
+		padding: 10px 60px 10px 15px;
+		position: relative;
+	}
+
+	.table_3 .table_row .cell:nth-child(1) {
+	    width: 100%;
+	    padding: 0;
+	}
+
+	.table_3 .table_row .cell:nth-child(2) {
+	    width: 100%;
+	    padding: 0;
+	}
+
+	.table_3 .table_row .cell:nth-child(3) {
+		position: absolute;
+		top: 7px;
+		right: 0;
+	}
+
+	/*-- /Section 1 - Private 2 --*/
+
+	/*-- Section 1 - Advent Page --*/
+
+	.inline_blocks_2 h4 {
+		font-size: 18px;
+		line-height: 20px;
+	}
+
+	/*-- /Section 1 - Advent Page --*/
+
+	/*-- Section 1 - Open Card --*/
+
+	.inline_blocks_5 {
+	    margin: 0;
+	}
+
+	.inline_blocks_5 > div {
+	    width: 100%;
+	    padding: 3px 0;
+	}
+
+	.testimonial_title_resp .testimonial_inlines {
+	    margin: 0 -10px 7px -10px;
+	}
+
+	.testimonial_title_resp .testimonial_inlines > div {
+	    padding: 0 10px;
+	}
+
+	/*-- /Section 1 - Open Card --*/
+
+	/*-- Section 1 - Recomendations Page --*/
+
+	.miniature_articles {
+	    margin: 0;
+	}
+
+	.miniature_article {
+		width: 100%;
+		margin: 0;
+	}
+
+	/*--/Section 1 - Recomendations Page --*/
+
+	/*-- Footer --*/
+
+	.callback_form {
+	    display: block;
+	}
+
+	.callback_form .col:nth-child(1),
+	.callback_form .col:nth-child(2) {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.callback_form .white_pill {
+		max-width: 180px;
+		margin: 0 auto;
+	}
+
+	/*-- /Footer --*/
 	
+}
+
+
+@media only screen and (max-width: 370px) {
+
+	h2 {
+	    font-size: 27px;
+	    line-height: 35px;
+	}
+
+	/*-- Header --*/
+
+	.header_top_row .left_col {
+	    width: 240px;
+	}
+
+	.header_top_row .right_col {
+	    width: calc(100% - 240px);
+	}
+
+	.logo_text div {
+	    font-size: 26px;
+	    line-height: 28px;
+	}
+
+	/*-- /Header --*/
+
+	/*-- Section 1 - Main Page --*/
+
+	.weather_info div {
+	    padding: 10px 2px;
+	}
+
+	/*-- /Section 1 - Main Page --*/
+
+	/*-- Section 1 - Advent Page --*/
+
+	.advent_card {
+	    padding: 10px 10px 5px 10px;
+	}
+
+	.advent_card_col_1 {
+	    width: 110px;
+	    padding-right: 5px;
+	}
+
+	.advent_card_col_2 {
+	    width: calc( 100% - 110px);
+	    padding-left: 5px;
+	    padding-top: 5px;
+	}
+
+	.card_title {
+	    font-size: 17px;
+	    line-height: 20px;
+	}
+
+	.inline_blocks_4 > div p {
+	    padding: 3px 0;
+	}
+
+	.advent_card p {
+		padding: 3px 0;
+	    font-size: 16px;
+	    line-height: 21px;
+	}
+
+	.advent_card .orange_link {
+		font-size: 15px;
+	    line-height: 16px;
+	}
+
+	/*-- /Section 1 - Advent Page --*/
+
+}
+
+@media only screen and (min-width: 768px) {
+
+	/*-- Section 1 - Main Page --*/
+	.catalog_resp {
+		display: block !important;
+	}
+	/*-- /Section 1 - Main Page --*/
+
 }

@@ -31,9 +31,9 @@
 						</div>
 					</a>
 				</div>
-				<div class="right_col">
-					<div class="inline_blocks">
-						<div>
+				<div class="right_col" id="menuElemsWrapp">
+					<div class="inline_blocks" id="menuElems">
+						<div id="searchWrap">
 							<div class="search_box">
 								<form>
 									<input type="text" placeholder="Поиск..." />
@@ -110,24 +110,28 @@
 							</div>
 						</div>
 					</div>
+					<button type="button" class="respmenubtn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
 				</div>
 			</div>
-			<div class="main_nav_wrapp" id="resp_nav">
+			<div class="main_nav_wrapp">
 				<div class="row">
-						<ul class="main_nav">
-							<li><a href="#" class="active">Новости</a></li>
-							<li><a href="#">Лайфхаки</a></li>
-							<li><a href="#">Рекомендации</a></li>
-							<li><a href="#">Форум</a></li>
-							<li><a href="#">Объявления</a></li>
-							<li><a href="#">Вакансии</a></li>
-						</ul>
-					<!-- <button class="respmenubtn">
-						<span></span>
-						<span></span>
-						<span></span>
-					</button> -->
+					<ul class="main_nav">
+						<li><a href="#" class="active">Новости</a></li>
+						<li><a href="#">Лайфхаки</a></li>
+						<li><a href="#">Рекомендации</a></li>
+						<li><a href="#">Форум</a></li>
+						<li><a href="#">Объявления</a></li>
+						<li><a href="#">Вакансии</a></li>
+					</ul>
 				</div>
+			</div>
+			<div class="resp_menu_wrapp">
+				<div class="resp_search"></div>
+				<div class="main_nav_resp"></div>
 			</div>
 		</div>
 	</header>
@@ -160,174 +164,9 @@
 
 		<!-- Section 1 - Main Page -->
 
-		<section>
+		<section class="sect_1">
 			<div class="row">
-				<div class="two_cols_templ">
-					<div class="left_col">
-						<h3>Каталог заведений</h3>
-						<ul class="side_menu">
-							<li>
-								<a href="#">Где поесть?</a>
-								<ul>
-									<li><a href="#" class="active">Кафе</a></li>
-									<li><a href="#">Бары</a></li>
-									<li><a href="#">Рестораны</a></li>
-									<li><a href="#">Фастфуд</a></li>
-									<li><a href="#">Суши</a></li>
-								</ul>
-							</li>
-							<li class="active">
-								<a href="#">Клубы</a>
-								<ul>
-									<li><a href="#">Спортивные клубы</a></li>
-									<li><a href="#">Night Clubs</a></li>
-									<li><a href="#">Дискотеки</a></li>
-									<li><a href="#">Казино</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Развлечения</a>
-								<ul>
-									<li><a href="#">Спортивные клубы</a></li>
-									<li><a href="#">Night Clubs</a></li>
-									<li><a href="#">Дискотеки</a></li>
-									<li><a href="#">Казино</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Красота</a>
-								<ul>
-									<li><a href="#">Спортивные клубы</a></li>
-									<li><a href="#">Night Clubs</a></li>
-									<li><a href="#">Дискотеки</a></li>
-									<li><a href="#">Казино</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Здоровье</a>
-								<ul>
-									<li><a href="#">Спортивные клубы</a></li>
-									<li><a href="#">Night Clubs</a></li>
-									<li><a href="#">Дискотеки</a></li>
-									<li><a href="#">Казино</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Покупки</a>
-								<ul>
-									<li><a href="#">Спортивные клубы</a></li>
-									<li><a href="#">Night Clubs</a></li>
-									<li><a href="#">Дискотеки</a></li>
-									<li><a href="#">Казино</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Транспорт</a>
-								<ul>
-									<li><a href="#">Спортивные клубы</a></li>
-									<li><a href="#">Night Clubs</a></li>
-									<li><a href="#">Дискотеки</a></li>
-									<li><a href="#">Казино</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Жилье и недвижимость</a>
-								<ul>
-									<li><a href="#">Спортивные клубы</a></li>
-									<li><a href="#">Night Clubs</a></li>
-									<li><a href="#">Дискотеки</a></li>
-									<li><a href="#">Казино</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Банки и страхование</a>
-								<ul>
-									<li><a href="#">Спортивные клубы</a></li>
-									<li><a href="#">Night Clubs</a></li>
-									<li><a href="#">Дискотеки</a></li>
-									<li><a href="#">Казино</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Образование и развитие</a>
-								<ul>
-									<li><a href="#">Спортивные клубы</a></li>
-									<li><a href="#">Night Clubs</a></li>
-									<li><a href="#">Дискотеки</a></li>
-									<li><a href="#">Казино</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Государственные  структуры</a>
-								<ul>
-									<li><a href="#">Спортивные клубы</a></li>
-									<li><a href="#">Night Clubs</a></li>
-									<li><a href="#">Дискотеки</a></li>
-									<li><a href="#">Казино</a></li>
-								</ul>
-							</li>
-						</ul>
-						<div class="course_table_wrapp">
-							<h3>Курс валют</h3>
-							<div class="course_table">
-								<div class="table_row">
-									<div class="cell">
-										
-									</div>
-									<div class="cell">
-										<h5>Покупка</h5>
-									</div>
-									<div class="cell">
-										<h5>Продажа</h5>
-									</div>
-								</div>
-								<div class="table_row">
-									<div class="cell">
-										<h5>Доллар</h5>
-									</div>
-									<div class="cell">
-										<p>23.9750</p>
-									</div>
-									<div class="cell">
-										<p>24.0000</p>
-									</div>
-								</div>
-								<div class="table_row">
-									<div class="cell">
-										<h5>Евро</h5>
-									</div>
-									<div class="cell">
-										<p>26.3988</p>
-									</div>
-									<div class="cell">
-										<p>26.4264</p>
-									</div>
-								</div>
-								<div class="table_row">
-									<div class="cell">
-										<h5>Рубль</h5>
-									</div>
-									<div class="cell">
-										<p>0.3743</p>
-									</div>
-									<div class="cell">
-										<p>0.3748</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="banner_wrapp">
-							<div class="banner" style="height: 320px;">
-								<p>Баннер</p>
-							</div>
-							<div class="banner" style="height: 320px;">
-								<p>Баннер</p>
-							</div>
-							<div class="banner" style="height: 320px;">
-								<p>Баннер</p>
-							</div>
-						</div>
-					</div>
+				<div class="two_cols_templ">					
 					<div class="right_col">
 						<div class="promo_slider_wrapp">
 							<div class="promo_slider">
@@ -372,7 +211,13 @@
 								<div class="promo_slider_controls"></div>
 							</div>
 						</div>
-						<div class="title_wrapp">
+						<div class="catalog_resp_wrapp">
+							<div class="catalog_resp_btn">
+								<p>Каталог заведений <i class="right_arrow"></i></p>
+							</div>
+							<div class="catalog_resp"></div>
+						</div>
+						<div class="title_wrapp resptitle">
 							<div class="col">
 								<h2>Последние новости</h2>
 							</div>
@@ -380,49 +225,106 @@
 								<a href="#" class="orange_link">Все новости</a>
 							</div>
 						</div>
-						<div class="news_thumbnails">
-							<a href="#" class="news_thumb">
-								<div class="img_box_wrapp">
-									<div class="img_box">
-										<img src="img/photo_1.jpg" alt="" />
+						<div class="news_thumbnails news_slider">
+							<div class="slide">
+								<a href="#" class="news_thumb">
+									<div class="img_box_wrapp">
+										<div class="img_box">
+											<img src="img/photo_1.jpg" alt="" />
+										</div>
 									</div>
-								</div>
-								<div class="descript">
-									<h3>Цены в стране: сколько стоит жить на Мальте</h3>
-									<p>Здесь дешевле, чем в Центральной и Северной Европе, но дороже, чем в Москве</p>
-								</div>
-								<div class="thumb_footer">
-									<p class="date"><i class="datepiker"></i>26.11.2019</p>
-								</div>
-							</a>
-							<a href="#" class="news_thumb">
-								<div class="img_box_wrapp">
-									<div class="img_box">
-										<img src="img/photo_2.jpg" alt="" />
+									<div class="descript">
+										<h3>Цены в стране: сколько стоит жить на Мальте</h3>
+										<p>Здесь дешевле, чем в Центральной и Северной Европе, но дороже, чем в Москве</p>
 									</div>
-								</div>
-								<div class="descript">
-									<h3>Зачем покупать недвижимость на Кипре</h3>
-									<p>Документы для оформления вида на жительство можно собрать за один день</p>
-								</div>
-								<div class="thumb_footer">
-									<p class="date"><i class="datepiker"></i>26.11.2019</p>
-								</div>
-							</a>
-							<a href="#" class="news_thumb">
-								<div class="img_box_wrapp">
-									<div class="img_box">
-										<img src="img/photo_3.jpg" alt="" />
+									<div class="thumb_footer">
+										<p class="date"><i class="datepiker"></i>26.11.2019</p>
 									</div>
-								</div>
-								<div class="descript">
-									<h3>Цены в стране: сколько стоит жить в Египте</h3>
-									<p>На курортах дороже по определению, но даже там – копейки</p>
-								</div>
-								<div class="thumb_footer">
-									<p class="date"><i class="datepiker"></i>26.11.2019</p>
-								</div>
-							</a>
+								</a>
+							</div>
+							<div class="slide">
+								<a href="#" class="news_thumb">
+									<div class="img_box_wrapp">
+										<div class="img_box">
+											<img src="img/photo_2.jpg" alt="" />
+										</div>
+									</div>
+									<div class="descript">
+										<h3>Зачем покупать недвижимость на Кипре</h3>
+										<p>Документы для оформления вида на жительство можно собрать за один день</p>
+									</div>
+									<div class="thumb_footer">
+										<p class="date"><i class="datepiker"></i>26.11.2019</p>
+									</div>
+								</a>
+							</div>
+							<div class="slide">
+								<a href="#" class="news_thumb">
+									<div class="img_box_wrapp">
+										<div class="img_box">
+											<img src="img/photo_3.jpg" alt="" />
+										</div>
+									</div>
+									<div class="descript">
+										<h3>Цены в стране: сколько стоит жить в Египте</h3>
+										<p>На курортах дороже по определению, но даже там – копейки</p>
+									</div>
+									<div class="thumb_footer">
+										<p class="date"><i class="datepiker"></i>26.11.2019</p>
+									</div>
+								</a>
+							</div>
+							<div class="slide">
+								<a href="#" class="news_thumb">
+									<div class="img_box_wrapp">
+										<div class="img_box">
+											<img src="img/photo_1.jpg" alt="" />
+										</div>
+									</div>
+									<div class="descript">
+										<h3>Цены в стране: сколько стоит жить на Мальте</h3>
+										<p>Здесь дешевле, чем в Центральной и Северной Европе, но дороже, чем в Москве</p>
+									</div>
+									<div class="thumb_footer">
+										<p class="date"><i class="datepiker"></i>26.11.2019</p>
+									</div>
+								</a>
+							</div>
+							<div class="slide">
+								<a href="#" class="news_thumb">
+									<div class="img_box_wrapp">
+										<div class="img_box">
+											<img src="img/photo_2.jpg" alt="" />
+										</div>
+									</div>
+									<div class="descript">
+										<h3>Зачем покупать недвижимость на Кипре</h3>
+										<p>Документы для оформления вида на жительство можно собрать за один день</p>
+									</div>
+									<div class="thumb_footer">
+										<p class="date"><i class="datepiker"></i>26.11.2019</p>
+									</div>
+								</a>
+							</div>
+							<div class="slide">
+								<a href="#" class="news_thumb">
+									<div class="img_box_wrapp">
+										<div class="img_box">
+											<img src="img/photo_3.jpg" alt="" />
+										</div>
+									</div>
+									<div class="descript">
+										<h3>Цены в стране: сколько стоит жить в Египте</h3>
+										<p>На курортах дороже по определению, но даже там – копейки</p>
+									</div>
+									<div class="thumb_footer">
+										<p class="date"><i class="datepiker"></i>26.11.2019</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="orange_link_wrapp">
+							<a href="#" class="orange_link">Все новости</a>
 						</div>
 						<div class="two_cols_templ_2">
 							<div class="col">
@@ -442,7 +344,7 @@
 												<i class="clouds"></i>
 											</div>
 											<div>
-												<p class="degrees">+2 °C</p>
+												<p class="degrees">+20 °C</p>
 											</div>
 											<div>
 												<p>Пасмурно</p>
@@ -591,7 +493,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="title_wrapp title_wrapp_2">
+						<div class="title_wrapp title_wrapp_2 resptitle">
 							<div class="col">
 								<h2>Последние  рекомендации</h2>
 							</div>
@@ -637,7 +539,185 @@
 								</div>
 							</div>
 						</div>
-
+						<div class="orange_link_wrapp">
+							<a href="#" class="orange_link">Все рекомендации</a>
+						</div>
+					</div>
+					<div class="left_col">
+						<h3 class="sidebar_ttile">Каталог заведений</h3>
+						<div class="side_menu_wrapp">
+							<ul class="side_menu" id="sideMenu">
+								<li>
+									<a href="#">Где поесть?</a>
+									<ul>
+										<li><a href="#" class="active">Кафе</a></li>
+										<li><a href="#">Бары</a></li>
+										<li><a href="#">Рестораны</a></li>
+										<li><a href="#">Фастфуд</a></li>
+										<li><a href="#">Суши</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Клубы</a>
+									<ul>
+										<li>
+											<a href="#">Спортивные клубы</a>
+											<ul>
+												<li><a href="#" class="active">Кафе</a></li>
+												<li><a href="#">Бары</a></li>
+												<li><a href="#">Рестораны</a></li>
+												<li><a href="#">Фастфуд</a></li>
+												<li><a href="#">Суши</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Night Clubs</a></li>
+										<li><a href="#">Дискотеки</a></li>
+										<li><a href="#">Казино</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Развлечения</a>
+									<ul>
+										<li><a href="#">Спортивные клубы</a></li>
+										<li><a href="#">Night Clubs</a></li>
+										<li><a href="#">Дискотеки</a></li>
+										<li><a href="#">Казино</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Красота</a>
+									<ul>
+										<li><a href="#">Спортивные клубы</a></li>
+										<li><a href="#">Night Clubs</a></li>
+										<li><a href="#">Дискотеки</a></li>
+										<li><a href="#">Казино</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Здоровье</a>
+									<ul>
+										<li><a href="#">Спортивные клубы</a></li>
+										<li><a href="#">Night Clubs</a></li>
+										<li><a href="#">Дискотеки</a></li>
+										<li><a href="#">Казино</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Покупки</a>
+									<ul>
+										<li><a href="#">Спортивные клубы</a></li>
+										<li><a href="#">Night Clubs</a></li>
+										<li><a href="#">Дискотеки</a></li>
+										<li><a href="#">Казино</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Транспорт</a>
+									<ul>
+										<li><a href="#">Спортивные клубы</a></li>
+										<li><a href="#">Night Clubs</a></li>
+										<li><a href="#">Дискотеки</a></li>
+										<li><a href="#">Казино</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Жилье и недвижимость</a>
+									<ul>
+										<li><a href="#">Спортивные клубы</a></li>
+										<li><a href="#">Night Clubs</a></li>
+										<li><a href="#">Дискотеки</a></li>
+										<li><a href="#">Казино</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Банки и страхование</a>
+									<ul>
+										<li><a href="#">Спортивные клубы</a></li>
+										<li><a href="#">Night Clubs</a></li>
+										<li><a href="#">Дискотеки</a></li>
+										<li><a href="#">Казино</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Образование и развитие</a>
+									<ul>
+										<li><a href="#">Спортивные клубы</a></li>
+										<li><a href="#">Night Clubs</a></li>
+										<li><a href="#">Дискотеки</a></li>
+										<li><a href="#">Казино</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Государственные  структуры</a>
+									<ul>
+										<li><a href="#">Спортивные клубы</a></li>
+										<li><a href="#">Night Clubs</a></li>
+										<li><a href="#">Дискотеки</a></li>
+										<li><a href="#">Казино</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="course_table_wrapp">
+							<h3>Курс валют</h3>
+							<div class="course_table">
+								<div class="table_row">
+									<div class="cell">
+										
+									</div>
+									<div class="cell">
+										<h5>Покупка</h5>
+									</div>
+									<div class="cell">
+										<h5>Продажа</h5>
+									</div>
+								</div>
+								<div class="table_row">
+									<div class="cell">
+										<h5>Доллар</h5>
+									</div>
+									<div class="cell">
+										<p>23.9750</p>
+									</div>
+									<div class="cell">
+										<p>24.0000</p>
+									</div>
+								</div>
+								<div class="table_row">
+									<div class="cell">
+										<h5>Евро</h5>
+									</div>
+									<div class="cell">
+										<p>26.3988</p>
+									</div>
+									<div class="cell">
+										<p>26.4264</p>
+									</div>
+								</div>
+								<div class="table_row">
+									<div class="cell">
+										<h5>Рубль</h5>
+									</div>
+									<div class="cell">
+										<p>0.3743</p>
+									</div>
+									<div class="cell">
+										<p>0.3748</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="banner_wrapp">
+							<div class="banner" style="height: 320px;">
+								<p>Баннер</p>
+							</div>
+							<div class="banner" style="height: 320px;">
+								<p>Баннер</p>
+							</div>
+							<div class="banner" style="height: 320px;">
+								<p>Баннер</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -706,28 +786,32 @@
 							</div>
 						</div>
 						<div class="col">
-							<ul class="soc_list">
-								<li>
-									<a href="#">
-										<i class="orange_facebook link"></i>
-										<i class="white_facebook hover"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="orange_vk link"></i>
-										<i class="white_vk hover"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="orange_inatagram link"></i>
-										<i class="white_inatagram hover"></i>
-									</a>
-								</li>
-							</ul>
-							<div class="metric_wrapp">
-								<img src="img/metric.jpg" alt="" style="display: block; width: auto; max-width: 100%;"/>
+							<div>
+								<ul class="soc_list">
+									<li>
+										<a href="#">
+											<i class="orange_facebook link"></i>
+											<i class="white_facebook hover"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="orange_vk link"></i>
+											<i class="white_vk hover"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="orange_inatagram link"></i>
+											<i class="white_inatagram hover"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div>
+								<div class="metric_wrapp">
+									<img src="img/metric.jpg" alt="" style="display: block; width: auto; max-width: 100%;"/>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -787,10 +871,10 @@
 
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
-	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.fancybox.css">
+	<!-- <link rel="stylesheet" type="text/css" href="vendors/css/jquery.fancybox.css"> -->
 	<script src="vendors/js/jquery.js"></script>
 	<script src="slick/slick.js"></script>
-	<script src="vendors/js/jquery.fancybox.js"></script>
+	<!-- <script src="vendors/js/jquery.fancybox.js"></script> -->
 	<script src="vendors/js/bootstrap.min.js"></script>
 	<script src="js/scripts.js"></script>
 

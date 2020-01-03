@@ -31,9 +31,9 @@
 						</div>
 					</a>
 				</div>
-				<div class="right_col">
-					<div class="inline_blocks">
-						<div>
+				<div class="right_col" id="menuElemsWrapp">
+					<div class="inline_blocks" id="menuElems">
+						<div id="searchWrap">
 							<div class="search_box">
 								<form>
 									<input type="text" placeholder="Поиск..." />
@@ -110,24 +110,28 @@
 							</div>
 						</div>
 					</div>
+					<button type="button" class="respmenubtn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
 				</div>
 			</div>
-			<div class="main_nav_wrapp" id="resp_nav">
+			<div class="main_nav_wrapp">
 				<div class="row">
-						<ul class="main_nav">
-							<li><a href="#" class="active">Новости</a></li>
-							<li><a href="#">Лайфхаки</a></li>
-							<li><a href="#">Рекомендации</a></li>
-							<li><a href="#">Форум</a></li>
-							<li><a href="#">Объявления</a></li>
-							<li><a href="#">Вакансии</a></li>
-						</ul>
-					<!-- <button class="respmenubtn">
-						<span></span>
-						<span></span>
-						<span></span>
-					</button> -->
+					<ul class="main_nav">
+						<li><a href="#" class="active">Новости</a></li>
+						<li><a href="#">Лайфхаки</a></li>
+						<li><a href="#">Рекомендации</a></li>
+						<li><a href="#">Форум</a></li>
+						<li><a href="#">Объявления</a></li>
+						<li><a href="#">Вакансии</a></li>
+					</ul>
 				</div>
+			</div>
+			<div class="resp_menu_wrapp">
+				<div class="resp_search"></div>
+				<div class="main_nav_resp"></div>
 			</div>
 		</div>
 	</header>
@@ -160,113 +164,523 @@
 
 		<!-- Section 1 - Forum V1 Page -->
 
-		<section>
+		<section class="sect_1_resp">
 			<div class="row">
 				<div class="two_cols_templ two_cols_templ_2">
-					<div class="left_col">
-						<h3>Каталог заведений</h3>
-						<ul class="side_menu">
-							<li>
-								<a href="#">Где поесть?</a>
-								<ul>
-									<li><a href="#" class="active">Кафе</a></li>
-									<li><a href="#">Бары</a></li>
-									<li><a href="#">Рестораны</a></li>
-									<li><a href="#">Фастфуд</a></li>
-									<li><a href="#">Суши</a></li>
-								</ul>
-							</li>
-							<li class="active">
-								<a href="#">Клубы</a>
-								<ul>
-									<li><a href="#">Спортивные клубы</a></li>
-									<li><a href="#">Night Clubs</a></li>
-									<li><a href="#">Дискотеки</a></li>
-									<li><a href="#">Казино</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Развлечения</a>
-								<ul>
-									<li><a href="#">Спортивные клубы</a></li>
-									<li><a href="#">Night Clubs</a></li>
-									<li><a href="#">Дискотеки</a></li>
-									<li><a href="#">Казино</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Красота</a>
-								<ul>
-									<li><a href="#">Спортивные клубы</a></li>
-									<li><a href="#">Night Clubs</a></li>
-									<li><a href="#">Дискотеки</a></li>
-									<li><a href="#">Казино</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Здоровье</a>
-								<ul>
-									<li><a href="#">Спортивные клубы</a></li>
-									<li><a href="#">Night Clubs</a></li>
-									<li><a href="#">Дискотеки</a></li>
-									<li><a href="#">Казино</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Покупки</a>
-								<ul>
-									<li><a href="#">Спортивные клубы</a></li>
-									<li><a href="#">Night Clubs</a></li>
-									<li><a href="#">Дискотеки</a></li>
-									<li><a href="#">Казино</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Транспорт</a>
-								<ul>
-									<li><a href="#">Спортивные клубы</a></li>
-									<li><a href="#">Night Clubs</a></li>
-									<li><a href="#">Дискотеки</a></li>
-									<li><a href="#">Казино</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Жилье и недвижимость</a>
-								<ul>
-									<li><a href="#">Спортивные клубы</a></li>
-									<li><a href="#">Night Clubs</a></li>
-									<li><a href="#">Дискотеки</a></li>
-									<li><a href="#">Казино</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Банки и страхование</a>
-								<ul>
-									<li><a href="#">Спортивные клубы</a></li>
-									<li><a href="#">Night Clubs</a></li>
-									<li><a href="#">Дискотеки</a></li>
-									<li><a href="#">Казино</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Образование и развитие</a>
-								<ul>
-									<li><a href="#">Спортивные клубы</a></li>
-									<li><a href="#">Night Clubs</a></li>
-									<li><a href="#">Дискотеки</a></li>
-									<li><a href="#">Казино</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Государственные  структуры</a>
-								<ul>
-									<li><a href="#">Спортивные клубы</a></li>
-									<li><a href="#">Night Clubs</a></li>
-									<li><a href="#">Дискотеки</a></li>
-									<li><a href="#">Казино</a></li>
-								</ul>
-							</li>
+					<div class="right_col">
+						<div class="catalog_resp_wrapp">
+							<div class="catalog_resp_btn">
+								<p>Каталог заведений <i class="right_arrow"></i></p>
+							</div>
+							<div class="catalog_resp"></div>
+						</div>
+						<div class="breadcrumbs_wrapp bottom_line">
+							<ul class="breadcrumbs">
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">Форум</a></li>
+							</ul>
+						</div>
+						<div class="forum_table_wrapp">
+							<h1>Форум</h1>							
+							<div class="forum_table">
+								<div class="table_row table_header">
+									<div class="cell">
+										<h3>Раздел</h3>
+									</div>
+									<div class="cell">
+										<h3>Темы</h3>
+									</div>
+									<div class="cell">
+										<h3>Сообщения</h3>
+									</div>
+									<div class="cell">
+										<h3>Последнее сообщение</h3>
+									</div>
+									<div class="cell">
+										<h3>RSS</h3>
+									</div>
+								</div>
+								<div class="table_row">
+									<div class="cell">
+										<div class="descript_wrapp">
+											<div>
+												<i class="folder"></i>
+											</div>
+											<div>
+												<a href="#" class="orange_bold_link">Куба. Бюджетный отдых</a>
+												<p>Платья на все случаи жизни. Независимо от того, требуется ли вам ...</p>
+											</div>
+										</div>
+									</div>
+									<div class="cell">
+										<div class="resp_h">
+											<h5>Темы:</h5>
+										</div>
+										<div>
+											<p class="num">4</p>
+										</div>
+									</div>
+									<div class="cell">
+										<div class="resp_h">
+											<h5>Сообщения:</h5>
+										</div>
+										<div>
+											<p class="num">223</p>
+										</div>
+									</div>
+									<div class="cell">
+										<div class="resp_h">
+											<h5>Последнее<br /> сообщение:</h5>
+										</div>
+										<div>
+											<p>10 июля 2019 г.  |  10:53:37 <br /> от <a href="#" class="orange_link">laraabr93</a></p>
+										</div>
+									</div>
+									<div class="cell">
+										<div class="resp_h">
+											<h5>RSS:</h5>
+										</div>
+										<div>
+											<div class="rss_wrapp">
+												<div><i class="rss"></i></div>
+												<div>
+													<a href="#" class="orange_bold_link">RSS</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="table_row">
+									<div class="cell">
+										<div class="descript_wrapp">
+											<div>
+												<i class="folder"></i>
+											</div>
+											<div>
+												<a href="#" class="orange_bold_link">Куба. Бюджетный отдых</a>
+												<p>Платья на все случаи жизни. Независимо от того, требуется ли вам ...</p>
+											</div>
+										</div>
+									</div>
+									<div class="cell">
+										<div class="resp_h">
+											<h5>Темы:</h5>
+										</div>
+										<div>
+											<p class="num">4</p>
+										</div>
+									</div>
+									<div class="cell">
+										<div class="resp_h">
+											<h5>Сообщения:</h5>
+										</div>
+										<div>
+											<p class="num">223</p>
+										</div>
+									</div>
+									<div class="cell">
+										<div class="resp_h">
+											<h5>Последнее<br /> сообщение:</h5>
+										</div>
+										<div>
+											<p>10 июля 2019 г.  |  10:53:37 <br /> от <a href="#" class="orange_link">laraabr93</a></p>
+										</div>
+									</div>
+									<div class="cell">
+										<div class="resp_h">
+											<h5>RSS:</h5>
+										</div>
+										<div>
+											<div class="rss_wrapp">
+												<div><i class="rss"></i></div>
+												<div>
+													<a href="#" class="orange_bold_link">RSS</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="table_row">
+									<div class="cell">
+										<div class="descript_wrapp">
+											<div>
+												<i class="folder"></i>
+											</div>
+											<div>
+												<a href="#" class="orange_bold_link">Куба. Бюджетный отдых</a>
+												<p>Платья на все случаи жизни. Независимо от того, требуется ли вам ...</p>
+											</div>
+										</div>
+									</div>
+									<div class="cell">
+										<div class="resp_h">
+											<h5>Темы:</h5>
+										</div>
+										<div>
+											<p class="num">4</p>
+										</div>
+									</div>
+									<div class="cell">
+										<div class="resp_h">
+											<h5>Сообщения:</h5>
+										</div>
+										<div>
+											<p class="num">223</p>
+										</div>
+									</div>
+									<div class="cell">
+										<div class="resp_h">
+											<h5>Последнее<br /> сообщение:</h5>
+										</div>
+										<div>
+											<p>10 июля 2019 г.  |  10:53:37 <br /> от <a href="#" class="orange_link">laraabr93</a></p>
+										</div>
+									</div>
+									<div class="cell">
+										<div class="resp_h">
+											<h5>RSS:</h5>
+										</div>
+										<div>
+											<div class="rss_wrapp">
+												<div><i class="rss"></i></div>
+												<div>
+													<a href="#" class="orange_bold_link">RSS</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="table_row">
+									<div class="cell">
+										<div class="descript_wrapp">
+											<div>
+												<i class="folder"></i>
+											</div>
+											<div>
+												<a href="#" class="orange_bold_link">Куба. Бюджетный отдых</a>
+												<p>Платья на все случаи жизни. Независимо от того, требуется ли вам ...</p>
+											</div>
+										</div>
+									</div>
+									<div class="cell">
+										<div class="resp_h">
+											<h5>Темы:</h5>
+										</div>
+										<div>
+											<p class="num">4</p>
+										</div>
+									</div>
+									<div class="cell">
+										<div class="resp_h">
+											<h5>Сообщения:</h5>
+										</div>
+										<div>
+											<p class="num">223</p>
+										</div>
+									</div>
+									<div class="cell">
+										<div class="resp_h">
+											<h5>Последнее<br /> сообщение:</h5>
+										</div>
+										<div>
+											<p>10 июля 2019 г.  |  10:53:37 <br /> от <a href="#" class="orange_link">laraabr93</a></p>
+										</div>
+									</div>
+									<div class="cell">
+										<div class="resp_h">
+											<h5>RSS:</h5>
+										</div>
+										<div>
+											<div class="rss_wrapp">
+												<div><i class="rss"></i></div>
+												<div>
+													<a href="#" class="orange_bold_link">RSS</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="table_row">
+									<div class="cell">
+										<div class="descript_wrapp">
+											<div>
+												<i class="folder"></i>
+											</div>
+											<div>
+												<a href="#" class="orange_bold_link">Куба. Бюджетный отдых</a>
+												<p>Платья на все случаи жизни. Независимо от того, требуется ли вам ...</p>
+											</div>
+										</div>
+									</div>
+									<div class="cell">
+										<div class="resp_h">
+											<h5>Темы:</h5>
+										</div>
+										<div>
+											<p class="num">4</p>
+										</div>
+									</div>
+									<div class="cell">
+										<div class="resp_h">
+											<h5>Сообщения:</h5>
+										</div>
+										<div>
+											<p class="num">223</p>
+										</div>
+									</div>
+									<div class="cell">
+										<div class="resp_h">
+											<h5>Последнее<br /> сообщение:</h5>
+										</div>
+										<div>
+											<p>10 июля 2019 г.  |  10:53:37 <br /> от <a href="#" class="orange_link">laraabr93</a></p>
+										</div>
+									</div>
+									<div class="cell">
+										<div class="resp_h">
+											<h5>RSS:</h5>
+										</div>
+										<div>
+											<div class="rss_wrapp">
+												<div><i class="rss"></i></div>
+												<div>
+													<a href="#" class="orange_bold_link">RSS</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="table_row">
+									<div class="cell">
+										<div class="descript_wrapp">
+											<div>
+												<i class="folder"></i>
+											</div>
+											<div>
+												<a href="#" class="orange_bold_link">Куба. Бюджетный отдых</a>
+												<p>Платья на все случаи жизни. Независимо от того, требуется ли вам ...</p>
+											</div>
+										</div>
+									</div>
+									<div class="cell">
+										<div class="resp_h">
+											<h5>Темы:</h5>
+										</div>
+										<div>
+											<p class="num">4</p>
+										</div>
+									</div>
+									<div class="cell">
+										<div class="resp_h">
+											<h5>Сообщения:</h5>
+										</div>
+										<div>
+											<p class="num">223</p>
+										</div>
+									</div>
+									<div class="cell">
+										<div class="resp_h">
+											<h5>Последнее<br /> сообщение:</h5>
+										</div>
+										<div>
+											<p>10 июля 2019 г.  |  10:53:37 <br /> от <a href="#" class="orange_link">laraabr93</a></p>
+										</div>
+									</div>
+									<div class="cell">
+										<div class="resp_h">
+											<h5>RSS:</h5>
+										</div>
+										<div>
+											<div class="rss_wrapp">
+												<div><i class="rss"></i></div>
+												<div>
+													<a href="#" class="orange_bold_link">RSS</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="table_row">
+									<div class="cell">
+										<div class="descript_wrapp">
+											<div>
+												<i class="folder"></i>
+											</div>
+											<div>
+												<a href="#" class="orange_bold_link">Куба. Бюджетный отдых</a>
+												<p>Платья на все случаи жизни. Независимо от того, требуется ли вам ...</p>
+											</div>
+										</div>
+									</div>
+									<div class="cell">
+										<div class="resp_h">
+											<h5>Темы:</h5>
+										</div>
+										<div>
+											<p class="num">4</p>
+										</div>
+									</div>
+									<div class="cell">
+										<div class="resp_h">
+											<h5>Сообщения:</h5>
+										</div>
+										<div>
+											<p class="num">223</p>
+										</div>
+									</div>
+									<div class="cell">
+										<div class="resp_h">
+											<h5>Последнее<br /> сообщение:</h5>
+										</div>
+										<div>
+											<p>10 июля 2019 г.  |  10:53:37 <br /> от <a href="#" class="orange_link">laraabr93</a></p>
+										</div>
+									</div>
+									<div class="cell">
+										<div class="resp_h">
+											<h5>RSS:</h5>
+										</div>
+										<div>
+											<div class="rss_wrapp">
+												<div><i class="rss"></i></div>
+												<div>
+													<a href="#" class="orange_bold_link">RSS</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<ul class="pagination_wrapp">
+							<ul class="pagination">
+								<li><a href="#" class="prev_btm"><</a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#" class="active">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li class="dots">...</li>
+								<li><a href="#">5</a></li>
+								<li><a href="#" class="next_btm">></a></li>
+							</ul>
 						</ul>
+					</div>
+					<div class="left_col">
+						<h3 class="sidebar_ttile">Каталог заведений</h3>
+						<div class="side_menu_wrapp">
+							<ul class="side_menu" id="sideMenu">
+								<li>
+									<a href="#">Где поесть?</a>
+									<ul>
+										<li><a href="#" class="active">Кафе</a></li>
+										<li><a href="#">Бары</a></li>
+										<li><a href="#">Рестораны</a></li>
+										<li><a href="#">Фастфуд</a></li>
+										<li><a href="#">Суши</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Клубы</a>
+									<ul>
+										<li>
+											<a href="#">Спортивные клубы</a>
+											<ul>
+												<li><a href="#" class="active">Кафе</a></li>
+												<li><a href="#">Бары</a></li>
+												<li><a href="#">Рестораны</a></li>
+												<li><a href="#">Фастфуд</a></li>
+												<li><a href="#">Суши</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Night Clubs</a></li>
+										<li><a href="#">Дискотеки</a></li>
+										<li><a href="#">Казино</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Развлечения</a>
+									<ul>
+										<li><a href="#">Спортивные клубы</a></li>
+										<li><a href="#">Night Clubs</a></li>
+										<li><a href="#">Дискотеки</a></li>
+										<li><a href="#">Казино</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Красота</a>
+									<ul>
+										<li><a href="#">Спортивные клубы</a></li>
+										<li><a href="#">Night Clubs</a></li>
+										<li><a href="#">Дискотеки</a></li>
+										<li><a href="#">Казино</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Здоровье</a>
+									<ul>
+										<li><a href="#">Спортивные клубы</a></li>
+										<li><a href="#">Night Clubs</a></li>
+										<li><a href="#">Дискотеки</a></li>
+										<li><a href="#">Казино</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Покупки</a>
+									<ul>
+										<li><a href="#">Спортивные клубы</a></li>
+										<li><a href="#">Night Clubs</a></li>
+										<li><a href="#">Дискотеки</a></li>
+										<li><a href="#">Казино</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Транспорт</a>
+									<ul>
+										<li><a href="#">Спортивные клубы</a></li>
+										<li><a href="#">Night Clubs</a></li>
+										<li><a href="#">Дискотеки</a></li>
+										<li><a href="#">Казино</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Жилье и недвижимость</a>
+									<ul>
+										<li><a href="#">Спортивные клубы</a></li>
+										<li><a href="#">Night Clubs</a></li>
+										<li><a href="#">Дискотеки</a></li>
+										<li><a href="#">Казино</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Банки и страхование</a>
+									<ul>
+										<li><a href="#">Спортивные клубы</a></li>
+										<li><a href="#">Night Clubs</a></li>
+										<li><a href="#">Дискотеки</a></li>
+										<li><a href="#">Казино</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Образование и развитие</a>
+									<ul>
+										<li><a href="#">Спортивные клубы</a></li>
+										<li><a href="#">Night Clubs</a></li>
+										<li><a href="#">Дискотеки</a></li>
+										<li><a href="#">Казино</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Государственные  структуры</a>
+									<ul>
+										<li><a href="#">Спортивные клубы</a></li>
+										<li><a href="#">Night Clubs</a></li>
+										<li><a href="#">Дискотеки</a></li>
+										<li><a href="#">Казино</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
 						<div class="course_table_wrapp">
 							<h3>Курс валют</h3>
 							<div class="course_table">
@@ -327,381 +741,7 @@
 								<p>Баннер</p>
 							</div>
 						</div>
-					</div>
-					<div class="right_col">
-						<div class="breadcrumbs_wrapp bottom_line">
-							<ul class="breadcrumbs">
-								<li><a href="#">Главная</a></li>
-								<li><a href="#">Форум</a></li>
-							</ul>
-						</div>
-
-						<div class="forum_table_wrapp">
-							<h1>Форум</h1>							
-							<div class="forum_table">
-								<div class="table_row table_header">
-									<div class="cell">
-										<h3>Раздел</h3>
-									</div>
-									<div class="cell">
-										<h3>Темы</h3>
-									</div>
-									<div class="cell">
-										<h3>Сообщения</h3>
-									</div>
-									<div class="cell">
-										<h3>Последнее сообщение</h3>
-									</div>
-									<div class="cell">
-										<h3>RSS</h3>
-									</div>
-								</div>
-								<div class="table_row">
-									<div class="cell">
-										<div class="descript_wrapp">
-											<div>
-												<i class="folder"></i>
-											</div>
-											<div>
-												<a href="#" class="orange_bold_link">Куба. Бюджетный отдых</a>
-												<p>Платья на все случаи жизни. Независимо от того, требуется ли вам ...</p>
-											</div>
-										</div>
-									</div>
-									<div class="cell">
-										<p class="num">4</p>
-									</div>
-									<div class="cell">
-										<p class="num">223</p>
-									</div>
-									<div class="cell">
-										<p>10 июля 2019 г.  |  10:53:37 <br /> от <a href="#" class="orange_link">laraabr93</a></p>
-									</div>
-									<div class="cell">
-										<div class="rss_wrapp">
-											<div><i class="rss"></i></div>
-											<div>
-												<a href="#" class="orange_bold_link">RSS</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="table_row">
-									<div class="cell">
-										<div class="descript_wrapp">
-											<div>
-												<i class="folder"></i>
-											</div>
-											<div>
-												<a href="#" class="orange_bold_link">Куба. Бюджетный отдых</a>
-												<p>Платья на все случаи жизни. Независимо от того, требуется ли вам ...</p>
-											</div>
-										</div>
-									</div>
-									<div class="cell">
-										<p class="num">4</p>
-									</div>
-									<div class="cell">
-										<p class="num">223</p>
-									</div>
-									<div class="cell">
-										<p>10 июля 2019 г.  |  10:53:37 <br /> от <a href="#" class="orange_link">laraabr93</a></p>
-									</div>
-									<div class="cell">
-										<div class="rss_wrapp">
-											<div><i class="rss"></i></div>
-											<div>
-												<a href="#" class="orange_bold_link">RSS</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="table_row">
-									<div class="cell">
-										<div class="descript_wrapp">
-											<div>
-												<i class="folder"></i>
-											</div>
-											<div>
-												<a href="#" class="orange_bold_link">Куба. Бюджетный отдых</a>
-												<p>Платья на все случаи жизни. Независимо от того, требуется ли вам ...</p>
-											</div>
-										</div>
-									</div>
-									<div class="cell">
-										<p class="num">4</p>
-									</div>
-									<div class="cell">
-										<p class="num">223</p>
-									</div>
-									<div class="cell">
-										<p>10 июля 2019 г.  |  10:53:37 <br /> от <a href="#" class="orange_link">laraabr93</a></p>
-									</div>
-									<div class="cell">
-										<div class="rss_wrapp">
-											<div><i class="rss"></i></div>
-											<div>
-												<a href="#" class="orange_bold_link">RSS</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="table_row">
-									<div class="cell">
-										<div class="descript_wrapp">
-											<div>
-												<i class="folder"></i>
-											</div>
-											<div>
-												<a href="#" class="orange_bold_link">Куба. Бюджетный отдых</a>
-												<p>Платья на все случаи жизни. Независимо от того, требуется ли вам ...</p>
-											</div>
-										</div>
-									</div>
-									<div class="cell">
-										<p class="num">4</p>
-									</div>
-									<div class="cell">
-										<p class="num">223</p>
-									</div>
-									<div class="cell">
-										<p>10 июля 2019 г.  |  10:53:37 <br /> от <a href="#" class="orange_link">laraabr93</a></p>
-									</div>
-									<div class="cell">
-										<div class="rss_wrapp">
-											<div><i class="rss"></i></div>
-											<div>
-												<a href="#" class="orange_bold_link">RSS</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="table_row">
-									<div class="cell">
-										<div class="descript_wrapp">
-											<div>
-												<i class="folder"></i>
-											</div>
-											<div>
-												<a href="#" class="orange_bold_link">Куба. Бюджетный отдых</a>
-												<p>Платья на все случаи жизни. Независимо от того, требуется ли вам ...</p>
-											</div>
-										</div>
-									</div>
-									<div class="cell">
-										<p class="num">4</p>
-									</div>
-									<div class="cell">
-										<p class="num">223</p>
-									</div>
-									<div class="cell">
-										<p>10 июля 2019 г.  |  10:53:37 <br /> от <a href="#" class="orange_link">laraabr93</a></p>
-									</div>
-									<div class="cell">
-										<div class="rss_wrapp">
-											<div><i class="rss"></i></div>
-											<div>
-												<a href="#" class="orange_bold_link">RSS</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="table_row">
-									<div class="cell">
-										<div class="descript_wrapp">
-											<div>
-												<i class="folder"></i>
-											</div>
-											<div>
-												<a href="#" class="orange_bold_link">Куба. Бюджетный отдых</a>
-												<p>Платья на все случаи жизни. Независимо от того, требуется ли вам ...</p>
-											</div>
-										</div>
-									</div>
-									<div class="cell">
-										<p class="num">4</p>
-									</div>
-									<div class="cell">
-										<p class="num">223</p>
-									</div>
-									<div class="cell">
-										<p>10 июля 2019 г.  |  10:53:37 <br /> от <a href="#" class="orange_link">laraabr93</a></p>
-									</div>
-									<div class="cell">
-										<div class="rss_wrapp">
-											<div><i class="rss"></i></div>
-											<div>
-												<a href="#" class="orange_bold_link">RSS</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="table_row">
-									<div class="cell">
-										<div class="descript_wrapp">
-											<div>
-												<i class="folder"></i>
-											</div>
-											<div>
-												<a href="#" class="orange_bold_link">Куба. Бюджетный отдых</a>
-												<p>Платья на все случаи жизни. Независимо от того, требуется ли вам ...</p>
-											</div>
-										</div>
-									</div>
-									<div class="cell">
-										<p class="num">4</p>
-									</div>
-									<div class="cell">
-										<p class="num">223</p>
-									</div>
-									<div class="cell">
-										<p>10 июля 2019 г.  |  10:53:37 <br /> от <a href="#" class="orange_link">laraabr93</a></p>
-									</div>
-									<div class="cell">
-										<div class="rss_wrapp">
-											<div><i class="rss"></i></div>
-											<div>
-												<a href="#" class="orange_bold_link">RSS</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="table_row">
-									<div class="cell">
-										<div class="descript_wrapp">
-											<div>
-												<i class="folder"></i>
-											</div>
-											<div>
-												<a href="#" class="orange_bold_link">Куба. Бюджетный отдых</a>
-												<p>Платья на все случаи жизни. Независимо от того, требуется ли вам ...</p>
-											</div>
-										</div>
-									</div>
-									<div class="cell">
-										<p class="num">4</p>
-									</div>
-									<div class="cell">
-										<p class="num">223</p>
-									</div>
-									<div class="cell">
-										<p>10 июля 2019 г.  |  10:53:37 <br /> от <a href="#" class="orange_link">laraabr93</a></p>
-									</div>
-									<div class="cell">
-										<div class="rss_wrapp">
-											<div><i class="rss"></i></div>
-											<div>
-												<a href="#" class="orange_bold_link">RSS</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="table_row">
-									<div class="cell">
-										<div class="descript_wrapp">
-											<div>
-												<i class="folder"></i>
-											</div>
-											<div>
-												<a href="#" class="orange_bold_link">Куба. Бюджетный отдых</a>
-												<p>Платья на все случаи жизни. Независимо от того, требуется ли вам ...</p>
-											</div>
-										</div>
-									</div>
-									<div class="cell">
-										<p class="num">4</p>
-									</div>
-									<div class="cell">
-										<p class="num">223</p>
-									</div>
-									<div class="cell">
-										<p>10 июля 2019 г.  |  10:53:37 <br /> от <a href="#" class="orange_link">laraabr93</a></p>
-									</div>
-									<div class="cell">
-										<div class="rss_wrapp">
-											<div><i class="rss"></i></div>
-											<div>
-												<a href="#" class="orange_bold_link">RSS</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="table_row">
-									<div class="cell">
-										<div class="descript_wrapp">
-											<div>
-												<i class="folder"></i>
-											</div>
-											<div>
-												<a href="#" class="orange_bold_link">Куба. Бюджетный отдых</a>
-												<p>Платья на все случаи жизни. Независимо от того, требуется ли вам ...</p>
-											</div>
-										</div>
-									</div>
-									<div class="cell">
-										<p class="num">4</p>
-									</div>
-									<div class="cell">
-										<p class="num">223</p>
-									</div>
-									<div class="cell">
-										<p>10 июля 2019 г.  |  10:53:37 <br /> от <a href="#" class="orange_link">laraabr93</a></p>
-									</div>
-									<div class="cell">
-										<div class="rss_wrapp">
-											<div><i class="rss"></i></div>
-											<div>
-												<a href="#" class="orange_bold_link">RSS</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="table_row">
-									<div class="cell">
-										<div class="descript_wrapp">
-											<div>
-												<i class="folder"></i>
-											</div>
-											<div>
-												<a href="#" class="orange_bold_link">Куба. Бюджетный отдых</a>
-												<p>Платья на все случаи жизни. Независимо от того, требуется ли вам ...</p>
-											</div>
-										</div>
-									</div>
-									<div class="cell">
-										<p class="num">4</p>
-									</div>
-									<div class="cell">
-										<p class="num">223</p>
-									</div>
-									<div class="cell">
-										<p>10 июля 2019 г.  |  10:53:37 <br /> от <a href="#" class="orange_link">laraabr93</a></p>
-									</div>
-									<div class="cell">
-										<div class="rss_wrapp">
-											<div><i class="rss"></i></div>
-											<div>
-												<a href="#" class="orange_bold_link">RSS</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<ul class="pagination_wrapp">
-							<ul class="pagination">
-								<li><a href="#" class="prev_btm"><</a></li>
-								<li><a href="#">1</a></li>
-								<li><a href="#" class="active">2</a></li>
-								<li><a href="#">3</a></li>
-								<li><a href="#">4</a></li>
-								<li class="dots">...</li>
-								<li><a href="#">5</a></li>
-								<li><a href="#" class="next_btm">></a></li>
-							</ul>
-						</ul>
-					</div>
+					</div>					
 				</div>
 			</div>
 		</section>
