@@ -1158,7 +1158,7 @@ a:active {
     left: -10px;
 }
 
-.dropdown_select .dropdown_box {
+.resp_menu_wrapp .dropdown_select .dropdown_box {
     display: none;
     position: relative;
     top: 0;
@@ -4823,6 +4823,8 @@ footer {
 .input_wrapp_orange input::placeholder {
     color: #ffffff;
 }
+
+.input_wrapp_orange ::-ms-input-placeholder {color:#ffffff;}
 
 .white_pill {
     display: block;
