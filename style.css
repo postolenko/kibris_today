@@ -222,6 +222,13 @@ textarea:focus::-moz-placeholder          {opacity: 0; transition: opacity .3s e
 textarea:focus:-moz-placeholder           {opacity: 0; transition: opacity .3s ease;}
 textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity .3s ease;}
 
+img:-moz-broken::before{
+    display:none;
+}
+
+img:-ms-broken::before{
+    display:none;
+}
 
 /*-------------------------------------------*/
 /* ----- DEFAULT STYLES ------ */

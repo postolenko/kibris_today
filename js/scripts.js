@@ -408,4 +408,15 @@ $(document).ready(function() {
         }
     });
 
+    // -----------------------
+
+    // if($(".file_name").length > 0 ) {
+        // parentBlock = $(this).closest(".file_input_wrapp");
+        $('input').on('change', function() {
+          var splittedFakePath = this.value.split('\\');
+          parentBlock = $(this).closest(".file_input_wrapp");
+          parentBlock.find(".file_name").text(splittedFakePath[splittedFakePath.length - 1]);
+        });
+    // }
+
 });
