@@ -5018,16 +5018,16 @@ footer {
 
 .soc_list li a:link,
 .soc_list li a:visited {
-    background-color: rgba(255, 255, 255);
+    background-color: rgb(255, 255, 255);
 }
 
 .soc_list li a:active,
 .soc_list li a.active {
-    background-color: rgba(255, 255, 255);
+    background-color: rgb(255, 255, 255);
 }
 
 .soc_list li a:hover {
-    background-color: rgba(254, 135, 0);
+    background-color: rgb(254, 135, 0);
 }
 
 .soc_list li a i {
