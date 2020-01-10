@@ -1,15 +1,12 @@
-// function getTooltipPosition() {
-//     $(".event_info").each(function() {
-//         parentBlock = $(".event_day");
-//         rightCoord = $(this).offset().left + $(this).width();
-//         // $(this).css({
-//         //     "left" : "none"
-//         // });
-//         if(rightCoord >= bodyWidth) {
-//             $(this).offset( {left: ( bodyWidth - $(this).outerWidth(true) - 25)} );
-//         }
-//     });
-// }
+function getTooltipPosition() {
+    $(".event_info").each(function() {
+        parentBlock = $(".event_day");
+        rightCoord = $(this).offset().left + $(this).width();
+        if(rightCoord >= bodyWidth) {
+            $(this).addClass("right");
+        }
+    });
+}
 
 function getMenuElemsPosition() {
     if(bodyWidth <= 1024) {
@@ -79,7 +76,8 @@ var parentBlock,
     dropdownList,
     slideBtn,
     dotVal,
-    rightCoord;
+    rightCoord,
+    innerMenu;
 
 $(window).load(function() {
 
@@ -87,9 +85,9 @@ $(window).load(function() {
 
 });
 
-$(window).resize(function() {
-// getTooltipPosition();
+$(window).resize(function() {    
     bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+    getTooltipPosition();
     getMenuElemsPosition();
     getCardsParams();
 });
@@ -101,7 +99,7 @@ $(document).scroll(function() {
 });
 
 $(document).ready(function() {
-    // getTooltipPosition();
+    getTooltipPosition();
     getMenuElemsPosition();
     getCardsParams();
 
@@ -184,7 +182,7 @@ $(document).ready(function() {
         $(".promo_slider").not(".slick-initialized").slick({
             dots: true,
             arrows: true,
-            // autoplay: true,
+            autoplay: true,
             autoplaySpeed: 4000,
             speed: 1200,
             slidesToShow: 1,
@@ -198,7 +196,7 @@ $(document).ready(function() {
      $(".news_slider").not(".slick-initialized").slick({
         dots: false,
         arrows: false,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 4000,
         speed: 1200,
         slidesToShow: 3,
@@ -224,7 +222,7 @@ $(document).ready(function() {
     $(".news_slider_2").not(".slick-initialized").slick({
         dots: false,
         arrows: false,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 4000,
         speed: 1200,
         slidesToShow: 4,
@@ -334,29 +332,38 @@ $(document).ready(function() {
         }
     });
 
-    $(".nav_2 li .inner_menu_btn").on("click", function(e) {
+    $(".nav_2 > li .inner_menu_btn").on("click", function(e) {
         e.preventDefault();
         $(this).toggleClass("active");
         parentBlock = $(this).closest("li");
         parentBlock.toggleClass("active");
-        $(this).next("a").toggleClass("active");
+        parentBlock.children("a").toggleClass("active");
+        innerMenu = parentBlock.children(".inner_menu");
+        rightCoord = innerMenu.offset().left + innerMenu.outerWidth(true) + 30;
+        if(rightCoord > bodyWidth ) {
+            parentBlock.addClass("rightPosition");
+        } else {
+            parentBlock.removeClass("rightPosition");
+        }
     });
 
     $(document).mouseup(function (e){
-        hide_element = $(".inner_menu");
+        hide_element = $(".inner_menu_btn, .inner_menu");
         if (!hide_element.is(e.target)
             && hide_element.has(e.target).length === 0) {
             $(".inner_menu_btn").removeClass("active");
-            $(".nav_2 li").removeClass("active");
-            $(".nav_2 li a").removeClass("active");
+            $(".nav_2 > li").removeClass("active");
+            $(".nav_2 > li").removeClass("rightPosition");
+            $(".nav_2 > li > a").removeClass("active");
         }
     });
 
     $(this).keydown(function(eventObject){
         if (eventObject.which == 27 ) {
             $(".inner_menu_btn").removeClass("active");
-            $(".nav_2 li").removeClass("active");
-            $(".nav_2 li a").removeClass("active");
+            $(".nav_2 > li").removeClass("active");
+            $(".nav_2 > li").removeClass("rightPosition");
+            $(".nav_2 > li > a").removeClass("active");
         }
     });
 

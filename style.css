@@ -312,23 +312,6 @@ a:active {
     -webkit-tap-highlight-color: transparent;
 }
 
-input {
-
-}
-
-input:focus {
-
-}
-
-textarea {
-
-}
-
-textarea:focus {
-
-}
-
-
 /*-------------------------------------------*/
 /* ----- REUSABLE COMPONENTS ------ */
 /*-------------------------------------------*/
@@ -672,8 +655,6 @@ textarea:focus {
 }
 
 .search_box {
-/*    width: 100%;
-    max-width: 300px;*/
     margin-top: 7px;
     position: relative;
     width: 300px;
@@ -720,10 +701,6 @@ textarea:focus {
     top: 0;
     right: 0;
     z-index: 2;
-}
-
-.orange_links_list {
-
 }
 
 .inline_blocks .orange_links_list {
@@ -1142,7 +1119,7 @@ textarea:focus {
     overflow-y: auto;
     margin: 0;
     padding-top: 20px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
     position: absolute;
     top: -110vh;
     left: 0;
@@ -1171,6 +1148,21 @@ textarea:focus {
 
 .resp_menu_wrapp.active {
     top: 72px;
+}
+
+/*----------------------*/
+
+.resp_menu_wrapp .dropdown_select.active .dropdown_box {
+    display: block;
+    margin-top: 10px;
+    left: -10px;
+}
+
+.dropdown_select .dropdown_box {
+    display: none;
+    position: relative;
+    top: 0;
+    left: -10px;
 }
 
 /*-------------------------------------------*/
@@ -1564,7 +1556,6 @@ textarea:focus {
 }
 
 .catalog_resp_btn p .right_arrow {
-    /*display: inline-block;*/
     display: none;
     vertical-align: baseline;
     width: 24px;
@@ -1864,11 +1855,6 @@ textarea:focus {
     color: #000000;
 }
 
-.weather_table {
-/*    display: table;
-    width: 100%;*/
-}
-
 .weather_table .table_row {
     display: flex;
     display: -webkit-flex;
@@ -1916,19 +1902,11 @@ textarea:focus {
     padding-left: 10px;
 }
 
-.datepicker_sect {
-
-}
-
 .datepicker_sect h3 {
     font-size: 27px;
     line-height: 30px;
     font-weight: bold;
     color: #000000;
-}
-
-.datepicker_wrapp {
-
 }
 
 .datepicker_header {
@@ -2256,7 +2234,6 @@ textarea:focus {
 }
 
 .filters_wrapp .filter {
-    /*width: calc(25% - 20px);*/
     width: 205px;
     margin: 7px 10px;
 }
@@ -2372,7 +2349,6 @@ textarea:focus {
 }
 
 .buttons_wrapp div {
-    /*width: calc(25% - 20px);*/
     width: 200px;
     margin: 10px;
 }
@@ -3069,10 +3045,6 @@ textarea:focus {
     transform: rotate(-180deg);
 }
 
-.mark_set i {
-
-}
-
 .mark_set p {
     padding: 3px 0 0 5px;
     font-size: 15px;
@@ -3224,10 +3196,6 @@ textarea:focus {
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, .1);
 }
 
-.private_thumb h3 {
-
-}
-
 .private_form_wrapp {
     padding: 9px 0 0 0;
 }
@@ -3329,10 +3297,6 @@ input.year {
 
 .icon_link div:nth-child(1) {
     margin-right: 10px;
-}
-
-.icon_link div:nth-child(2) {
-
 }
 
 .pdf {
@@ -3547,7 +3511,7 @@ input.year {
     top: 100%;
     left: 50%;
     margin-left: -11.5px;
-    z-index: 2;
+    z-index: 4;
 }
 
 .event_day:after {
@@ -3562,7 +3526,7 @@ input.year {
     left: 50%;
     margin-top: 4px;
     margin-left: -6.5px;
-    z-index: 2;
+    z-index: 4;
 }
 
 .event_info {
@@ -3615,8 +3579,13 @@ input.year {
     position: absolute;
     top: 100%;
     left: 0;
-    z-index: 2;
+    z-index: 3;
     margin-top: 10px;
+}
+
+.datepiker_days > div > .event_info.right {
+    left: auto;
+    right: 0;
 }
 
 /*-- /Section 3 - Private --*/
@@ -3760,10 +3729,6 @@ input.year {
     margin: 10px;
 }
 
-.table_thumb h3 {
-
-}
-
 .table_3 {
     display: flex;
     display: -webkit-flex;
@@ -3888,10 +3853,6 @@ input.year {
     color: #4c4c4c;
 }
 
-.dropdown_select_2 {
-
-}
-
 .dropdown_select_2 .active_val p {
     border-bottom: 1px dotted #ff8800;
     color: #ff8800;
@@ -4006,6 +3967,11 @@ input.year {
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1),inset 0 3px 0 0 rgba(255, 136, 0, .004);
 }
 
+.rightPosition .inner_menu {
+    left: auto;
+    right: -10px;
+}
+
 .inner_menu:before {
     content: "";
     width: 0;
@@ -4016,6 +3982,11 @@ input.year {
     position: absolute;
     top: -10px;
     left: 22px;
+}
+
+.rightPosition .inner_menu:before {
+    left: auto;
+    right: 22px;
 }
 
 .inner_menu .side_menu {
@@ -4760,16 +4731,7 @@ input.year {
     padding-top: 3px;
 }
 
-
-
 /*-- /Section 1 - Vacansies Page --*/
-
-
-
-
-
-
-
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
@@ -4777,16 +4739,11 @@ input.year {
 
 footer {
     padding: 1px 0;
-
 }
 
 .footer_section {
-    padding: 61px 0 0 0;
+    padding: 80px 0 0 0;
     background-color: #f2f2f2;
-}
-
-.footer {
-
 }
 
 .callback_form_sect {
@@ -4946,8 +4903,6 @@ footer {
 }
 
 .seo_text {
-    display: inline-block;
-    vertical-align: top;
     padding: 10px 7% 10px 0;
 }
 
@@ -5234,10 +5189,6 @@ footer {
     color: #ff8800;
 }
 
-
-
-
-
 .soc_list_fixed {
     display: block;
     margin: 0;
@@ -5502,10 +5453,6 @@ input {
 
 input::placeholder {
     color: #b2b2b2;
-}
-
-.submit_wrapp {
-
 }
 
 .orange_pill {

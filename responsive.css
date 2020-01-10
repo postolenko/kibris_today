@@ -261,7 +261,8 @@
 	}
 
 	.resp_menu_wrapp {
-	    padding: 0 25px;
+	    padding-left: 25px;
+	    padding-right: 25px;
 	    position: fixed;
 	}
 
@@ -309,10 +310,6 @@
 	/*--/Section 1 - Recomendations Page --*/
 
 	/*-- Footer --*/
-
-	.footer_section {
-	    padding: 1px 0 0 0;
-	}
 
 	.seo_text {
 	    padding: 10px 4% 10px 0;
@@ -534,6 +531,10 @@
 	/*--/Section 1 - Recomendations Page --*/
 
 	/*-- Footer --*/
+
+	.footer_section {
+	    padding: 1px 0 0 0;
+	}
 
 	.callback_form_sect {
 		height: 100%;
@@ -1183,6 +1184,20 @@
 	.testimonial_col_2 {
 	    width: 100%;
 	    padding-left: 0;
+	}
+
+	.event_info {
+	    width: 290px !important;
+	}
+
+	.event_info > h5 {
+	    font-size: 16px;
+	    line-height: 25px;
+	}
+
+	.event_info p {
+	    font-size: 16px;
+	    line-height: 22px;
 	}
 
 	/*-- /Section 3 - Private --*/
